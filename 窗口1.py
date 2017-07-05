@@ -6,7 +6,7 @@ def resize(ev=None):
 #config函数就是通过设置组件的参数来改变组件的，这里改变的是font字体大小
 top=Tk()   #主窗口设置了主窗口的初始大小600x400
 top.geometry('600x400')  #
-label=Label(top,text='Hello world!',font='Helvetica -12 bold')  #设置标签字体的初始大小
+label=Label(top,text='Hello world!',font='Helvetica -12 bold')     #设置标签字体的初始大小
 label.pack(fill=Y,expand=1)
 #scale创建进度条，设置
 scale=Scale(top,from_=10,to=40,orient=HORIZONTAL,command=resize)
