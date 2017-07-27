@@ -79,7 +79,7 @@ def get_captcha():
 def isLogin():
     # 通过查看用户个人信息来判断是否已经登录
     url = "https://www.zhihu.com/settings/profile"
-    login_code = session.get(url, headers=headers, allow_redirects=False).status_code
+    login_code = session.get(url, headers=headers, allow_redirects=False).status_code     #allow_redirects不允许间接的访问！！
     if login_code == 200:
         return True
     else:
@@ -131,6 +131,7 @@ except:
     pass
 
 
+
 if __name__ == '__main__':
     if isLogin():
         print('您已经登录')
@@ -138,8 +139,10 @@ if __name__ == '__main__':
         account = input('请输入你的用户名\n>  ')
         secret = input("请输入你的密码\n>  ")
         login(secret, account)
+
 profileurl = 'https://www.zhihu.com/topic'
 profileresponse = session.get(url=profileurl, headers=headers)
-print('profile页面响应码：', profileresponse.status_code)
+print 'profile页面响应码：', profileresponse.status_code
 
 print profileresponse.text
+print get_xsrf()

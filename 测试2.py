@@ -36,4 +36,3 @@ for i in range(1,2):
           with open('ss.csv','a') as f:
               f.write(s)
           i+=1
-

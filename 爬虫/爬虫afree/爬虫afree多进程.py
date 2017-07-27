@@ -36,7 +36,7 @@ if __name__=='__main__':
     pool = multiprocessing.Pool(processes = 20)     #processes = 3为进程数量
     for i in range(0 ,1200):
 
-       url = 'http://videofile-hls-ko-vod-cf.afreecatv.com/video/_definst_/mp4:mvod/20170722/630/D9AE91FC_194371630_2.mp4/media_w1506605805_'+str(i)+'.ts'
+       url = 'http://videofile-hls-ko-vod-cf.afreecatv.com/video/_definst_/mp4:mvod/20170725/693/0AA8D4E3_194479693_1.mp4/media_w448428914_'+str(i)+'.ts'
        pool.apply_async(afree, (url, ))   #维持执行的进程总数为processes，当一个进程执行完毕后会添加新的进程进去
 
     print "开始下载文件>>>>>\n"

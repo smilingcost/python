@@ -1,12 +1,12 @@
 #coding=utf-8
-
+import os
+import json
 import re
 import requests
+import demjson
 from lxml import etree
 import lxml.html
-import demjson
-import json
-a=['1','2','2']
-print range(len(a))
-for x in range(len(a)):
-    print a[x]
+import time
+
+print s
+
