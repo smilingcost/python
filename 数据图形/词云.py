@@ -1,5 +1,5 @@
 # -*- encoding:utf-8 -*-
-import jieba.analyse
+"""import jieba.analyse
 from os import path
 from scipy.misc import imread
 import matplotlib as mpl
@@ -36,8 +36,7 @@ if __name__ == "__main__":
     plt.show()
 
 
-
-
+"""
 
 #coding:utf-8
 import matplotlib.pyplot as plt
@@ -47,10 +46,10 @@ import numpy as np
 from PIL import Image
 
 #读入背景图片
-abel_mask = np.array(Image.open("filepath"))
+abel_mask = np.array(Image.open("9897596a5c677c2b3.jpg"))
 
 #读取要生成词云的文件
-text_from_file_with_apath = open('filepath').read()
+text_from_file_with_apath = open('sj.csv').read()
 
 #通过jieba分词进行分词并通过空格分隔
 wordlist_after_jieba = jieba.cut(text_from_file_with_apath, cut_all = True)
@@ -61,7 +60,7 @@ my_wordcloud = WordCloud(
             mask = abel_mask,        # 设置背景图片
             max_words = 200,            # 设置最大现实的字数
             stopwords = STOPWORDS,        # 设置停用词
-            font_path = C:/Users/Windows/fonts/simkai.ttf',# 设置字体格式，如不设置显示不了中文
+            font_path = 'C:/Users/Windows/fonts/simkai.ttf',# 设置字体格式，如不设置显示不了中文
             max_font_size = 50,            # 设置字体最大值
             random_state = 30,            # 设置有多少种随机生成状态，即有多少种配色方案
                 scale=.5
