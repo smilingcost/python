@@ -34,7 +34,7 @@ def afree(url):
      pass
 if __name__=='__main__':
   print "开始下载文件>>>>>\n"
-  for i in range(17 ,1200):
-    url = 'http://live-hls-korea-cf.afreecatv.com/livestream-17/1280x720/194546838-flash-original-hls_'+str(i)+'.ts'
+  for i in range(60 ,5000):
+    url = 'http://live-hls-korea-cf.afreecatv.com/livestream-25/1280x720/194877982-flash-original-hls_'+str(i)+'.ts'
     afree(url)
   print '文件下载完成'
