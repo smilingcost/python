@@ -11,7 +11,9 @@ print u'编码问题导致数据无法写入本地'
 """ 解决：s="数据".encode('utf-8'),s="数据"为unicode 编码，写入本地默认为gbk编码，故先将编码为，只限制于用正则，lxml获取到的数据，
          如names=re.findall(r'"bj_nick": "(.*?)",',docs)[0].encode('utf-8')），若直接是names='금화S2',则不用转化"""
 
-
+print u'编码问题导致数据读取是为乱码'
+"""   如： f=open(u"爬虫\\淘宝_js-m\\sj.csv")
+         r=f.read().encode("utf-8")"""
 
 
 

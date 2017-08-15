@@ -57,6 +57,14 @@ def bj_find(info):
     print 'bj在talk女生中排名为：%s'%(str(info[2]))
     print 'bj在talk总排名为：%s'%(str(info[3]))
     print 'bj是否在直播：-------- %s'%(str(info[4]))
+    if info[4]=='true':
+        print "主播开始直播了，请移至浏览器观看\直播已开始n!!!!!!!!!!!!"
+        time.sleep(1)
+        bj_main(x)
+    else:
+        print "主播没有直播哦，请继续等待吧\n!!!!!!!!!!!!"
+        time.sleep(5)
+        bj_main(x)
 
 def bj_url(name,id,rank_f):       #获取需要爬虫的url
     global count  #定义全局变量
@@ -183,6 +191,7 @@ def bj_article(url_2):
 
 if __name__ == '__main__':
     x=int(raw_input('请输入执行的代码: \n'))
+
     if x==1:                 #用if 来执行不同的代码
       count=1
       try:

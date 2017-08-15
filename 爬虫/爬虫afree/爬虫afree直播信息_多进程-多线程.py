@@ -9,6 +9,7 @@ import lxml.html
 import time
 import multiprocessing
 import threading
+import MySQLdb
 
 USER_AGENT = 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 UBrowser/6.1.2716.5 Safari/537.36'
 header = { "User-Agent" :USER_AGENT  }             #定义开头
@@ -67,8 +68,8 @@ def bj_url(name,id,rank_f):       #获取需要爬虫的url
     #     bj_article(url_2)
          print '主播---',id,'---信息获取完毕\n======================================================'
          time.sleep(1)
-    except:
-        print "获取主播页面出错！！！！！！！！！！！\n======================================================"
+    except(Exception) ,e:
+        print "获取主播页面出错！！！！！！！！！！！\n======================================================",e
         pass
     bj_thread(url,url_0,url_1,url_2,bj_f_rank,img_id)
 
@@ -78,9 +79,9 @@ def bj_thread(url,url_0,url_1,url_2,bj_f_rank,img_id):                 #========
     t3 = threading.Thread(target=bj_video,args=(url_1,))
     t4 = threading.Thread(target=bj_article,args=(url_2,))
     t1.start()
-    t2.start()
-    t3.start()
-    t4.start()
+  #  t2.start()
+   # t3.start()
+  #  t4.start()
     t1.join()
     t2.join()
     t3.join()
@@ -107,20 +108,57 @@ def  bj_info(url,bj_f_rank):   #获取主播个人信息
      bj_last_visit=docs.xpath('//div[@class="my_bs_guest"]/ul/li[2]/span/text()')[0]
      bj_last_up=docs.xpath('//div[@class="my_bs_guest"]/ul/li[3]/span/text()')[0]
      bj_info_bs=docs.xpath('//p[@class="info_bs"]/text()')[0]
-     bj_logo_img(logo_img_url,bj_f_rank)
+   #  bj_logo_img(logo_img_url,bj_f_rank)
       #---------------------------保存主播信息----------------------------------------
      bj=str(bj_f_rank)+'|'+bj_name.encode('utf-8')+'|'+bj_id+'|'+ bj_rank_all.encode('utf-8')+'|'+bj_follower+'|'+bj_stime+'|'+bj_swatch+'|'+bj_last_time+'|'+bj_last_visit+'|'+bj_last_up+'|'+bj_info_bs.encode('utf-8')+'|'+img+'\n'
+     bjs=[bj_f_rank,bj_name,bj_id, bj_rank_all,bj_follower,bj_stime,bj_swatch,bj_last_time,bj_last_visit,bj_last_up,bj_info_bs,img]
      print '主播信息：',bj
+     bj_info_sql(bjs)
      try:
          with open('bj.csv','a')as f:         #保存最后爬取的信息
              s=str(bj)
              f.write(s)
          print '成功保存BJ：%s 的信息\n======================================================'%(bj_name.encode('utf-8'))#韩语需进行编码
-     except:
-         print "BJ %s 信息保存不成功\n======================================================"%(bj_name.encode('utf-8'))
- except:
-       print "bj个人信息无法获取---跳过!!!\n======================================================"
+
+     except(Exception) ,e:
+         print "BJ %s 信息保存不成功\n======================================================"%(bj_name.encode('utf-8')),e
+ except(Exception) ,e:
+       print "bj个人信息无法获取---跳过!!!\n======================================================",e
        pass
+
+def bj_info_sql(bjs):
+     print "开始写入数据库--------------------\n"
+     time.sleep(1)
+     bj_f_rank=bjs[0]
+     bj_name=bjs[1]
+     bj_id=bjs[2]
+     bj_rank_all=bjs[3]
+     bj_follower=bjs[4]
+     bj_stime=bjs[5]
+     bj_swatch=bjs[6]
+     bj_last_time=bjs[7]
+     bj_last_visit=bjs[8]
+     bj_last_up=bjs[9]
+     bj_info_bs=bjs[10]
+     img=bjs[11]
+     print bj_f_rank,bj_name,bj_id, bj_rank_all,bj_follower,bj_stime,bj_swatch,bj_last_time,bj_last_visit,bj_last_up,bj_info_bs,img
+ # 打开数据库连接
+     db=MySQLdb.connect(host="127.0.0.1",user="root",passwd="zjg123",db="tae",charset="utf8") #将localhost改为127.0.0.1，不然出错
+# 使用cursor()方法获取操作游标
+     cursor = db.cursor()
+# 使用execute方法执行SQL语句
+     try:
+       cursor.execute("insert into bj (bj_f_rank,bj_name,bj_id,bj_rank_all,bj_follower,bj_stime,bj_swatch,bj_last_time,bj_last_visit,bj_last_up,bj_info_bs,img) values ('%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s')"%(bj_f_rank,bj_name,bj_id, bj_rank_all,bj_follower,bj_stime,bj_swatch,bj_last_time,bj_last_visit,bj_last_up,bj_info_bs,img))
+       print "已成功插入数据>>>\n"
+     except(Exception) ,e:
+         print "插入数据失败!!!",e
+         db.rollback()
+     db.commit()     #必须调用commit函数，否者你对数据库的所有操作将会失效！当断开连接时，所有悬挂的修改将会被重置。这很容易导致出错
+     db.close()
+     time.sleep(1)
+
+
+
 
 def bj_logo_img(logo_img_url,bj_f_rank):
     print '主播头像图片信息--\n',logo_img_url
@@ -137,8 +175,8 @@ def bj_logo_img(logo_img_url,bj_f_rank):
             f.write(r.content)
             print "图片%s成功保存在：%r\n======================================================"%(file_name,path)
 
-      except:
-        print "图片%s保存不成功\n======================================================"%(file_name)
+      except(Exception) ,e:
+        print "图片%s保存不成功\n======================================================"%(file_name),e
     else :
         print "logo图片已存在---------\n======================================================"
 
@@ -168,7 +206,8 @@ def bj_img(url_0,img_id,bj_f_rank):    #bj主页图片信息
                      print "图片%s保存不成功\n======================================================"%(file_name)
              else :
                  print "图片信息已存在---------\n======================================================"
-         except:
+         except(Exception) ,e:
+              print e
               i+=1
               pass
 

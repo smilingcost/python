@@ -8,12 +8,17 @@ import demjson
 from lxml import etree
 import lxml.html
 import time
-import pyodbc
-import pymssql
+import MySQLdb
+import urllib
 
-def url_1():
+USER_AGENT = 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 UBrowser/6.1.2716.5 Safari/537.36'
+header = { "User-Agent" :USER_AGENT  }
+
+def goods_url():
     list=[]
+    name=raw_input("请输入需要爬取得名称：")
     page=raw_input("请输入需要爬取得页数：")
+    data=urllib.quote(name)       #将中文转为url编码格式
     for i in range(0,int(page)):
          x=44*i
          list.append(x)
@@ -21,22 +26,32 @@ def url_1():
 
     i=0
     for lit in list:
-         url = 'https://s.taobao.com/search?q=%E6%B8%B8%E6%88%8F%E6%9C%AC&imgfile=&commend=all&ssid=s5-e&search_type=item&sourceId=tb.index&spm=a21bo.50862.201856-taobao-item.1&ie=utf8&initiative_id=tbindexz_20170701&sort=sale-desc&bcoffset=6&p4ppushleft=%2C44&s='+str(lit)
-         print '开始爬虫第%s页'%(int(i+1)),url
+         url = 'https://s.taobao.com/search?app=mainSrp&q='+str(data)+'&cd=false&sort=sale-desc&bcoffset=0&p4ppushleft=%2C44&s='+str(lit)
+         goods_main(i,url)
+         i+=1
+
+def goods_main(i,url):
+    try:
+         print '开始爬虫第%s页--------------------------\n'%(int(i+1)),url
          time.sleep(1)
          htmls = requests.get(url).text
          docs = lxml.html.fromstring(htmls)
-         titles = docs.xpath('//script[7]/text()')[0]          #爬取网页script的文本内容
-         title=re.findall(r'g_page_config = (.*?shopcardOff":false}})',titles)[0]   #处理提取json格式里的内容
-         yield url_2(title)
-         print '第%s页爬虫结束'%(int(i+1))
-         i+=1
-def url_2(title):          #打开文件
+    except:
+         print '获取网页失败，重新获取》》》》'
+         goods_main(i,url)
+
+    titles = docs.xpath('//script[8]/text()')[0]          #爬取网页script的文本内容
+       #  print titles
+    title=re.findall(r'g_page_config = (.*?shopcardOff":false}})',titles)[0]   #处理提取json格式里的内容
+    url_1(title)
+    print '第%s页爬虫结束--------------------------\n'%(int(i+1))
+
+
+
+def url_1(title):          #打开文件
 
     loads = demjson.decode(title)              #.decode() 函数解码 JSON 数据。该函数返回 Python 字段的数据类型
     html=json.dumps(loads, indent=4, sort_keys=False, ensure_ascii=False)     #将 Python 对象编码成 JSON 字符串
-
-
     with open('tb.json','w')as f:         #保存需要获取的文本源文件
            r=str(html)
            f.write(r)
@@ -49,35 +64,76 @@ def url_2(title):          #打开文件
     i=0
     for a in titles:
         time.sleep(0.6)
-        sj=titles[i]+','+price[i]+','+selas[i]+','+'https:'+url[i]+','+'https:'+pi_url[i]+'\n'
-        print sj
+        info=titles[i]+','+price[i]+','+selas[i]+','+'https:'+url[i]+','+'https:'+pi_url[i]+'\n'
+        infos=[titles[i],price[i],selas[i],'https:'+url[i],'https:'+pi_url[i]]
+        g_url='https:'+url[i]
+        goods_info(info,infos)
+      #  goods_infos(g_url)
+       # goods_pl(g_url)
 
-        with open('sj.csv','a')as f:         #保存最后爬取的信息
-           s=str(sj)
-           f.write(s)
-        titles_sql=titles[i]
-        price_sql=price[i]
-        selas_sql=selas[i]
-        url_sql='https:'+url[i]
-        pi_url_sql='https:'+pi_url[i]
-        print titles_sql,price_sql,selas_sql,url_sql,pi_url_sql
-        mssql(titles_sql,price_sql,selas_sql,url_sql,pi_url_sql)
         i+=1
+def goods_info(info,infos):
+    print '商品简单信息：\n----------------------------'
+    print info
+    try:
+       with open('info.csv','a')as f:         #保存最后爬取的信息
+           s=str(info)
+           f.write(s)
+       print '成功保存商品简单信息\n'
+       goods_info_sql(infos)
+    except:
+        print '保存商品简单信息失败\n'
 
-def mssql(titles_sql,price_sql,selas_sql,url_sql,pi_url_sql):        #将数据写入数据库
-#数据库服务器信息
-  conn  = pymssql.connect(server='192.168.31.132', user='sa', password='zjg123', database='tae',  charset='UTF-8')  #用此语句连接，获得连接对象。
-  cursor = conn.cursor()  # %获得游标。
-#如果update/delete/insert记得要conn.commit()
- #否则数据库事务无法提交
-  try:    #插入数据
-    cursor.execute("insert into sj (titles, price,selas,url,pi_url) values (%r,%r,%r,%r,%r)"%(titles_sql,price_sql,selas_sql,url_sql,pi_url_sql))       #变量名不能治values里面，需用%s
-    print "已成功插入数据>>>\n>>>>"
-  except:
-    print "插入数据失败!!!\n>>>>"
-  time.sleep(0.5)
-  conn.commit()     #必须调用commit函数，否者你对数据库的所有操作将会失效！当断开连接时，所有悬挂的修改将会被重置。这很容易导致出错
-  conn.close()
+def goods_info_sql(infos):
+       print "开始写入数据库--------------------\n"
+       time.sleep(1)
+       titles_sql=infos[0]
+       price_sql =infos[1]
+       selas_sql=infos[2]
+       url_sql=infos[3]
+       pi_url_sql=infos[4]
+ # 打开数据库连接
+       db=MySQLdb.connect(host="127.0.0.1",user="root",passwd="zjg123",db="tae",charset="utf8") #将localhost改为127.0.0.1，不然出错
+# 使用cursor()方法获取操作游标
+       cursor = db.cursor()
+# 使用execute方法执行SQL语句
+       try:
+          cursor.execute("insert into sj (titles, price,selas,url,pi_url) values ('%s','%s','%s','%s','%s')"%(titles_sql,price_sql,selas_sql,url_sql,pi_url_sql))
+          print "已成功插入数据>>>\n",titles_sql,price_sql,selas_sql,url_sql,pi_url_sql
+       except:
+         print "插入数据失败!!!"
+         db.rollback()
+       db.commit()     #必须调用commit函数，否者你对数据库的所有操作将会失效！当断开连接时，所有悬挂的修改将会被重置。这很容易导致出错
+       db.close()
+       time.sleep(1)
+
+def goods_infos(g_url):
+    print '商品详细信息：\n----------------------------'
+
+
+def goods_pl(g_url) :
+        print '商品评论信息：\n----------------------------\n',g_url
+
+        html = requests.get(g_url).text
+        doc = lxml.html.fromstring(html)
+        title = doc.xpath('//script[3]/text()')[0]
+        itemId=re.findall(r'itemId:"(.*?)"',title)[0]
+        sellerId=re.findall(r'sellerId:"(.*?)"',title)[0]
+        print  itemId,sellerId
+        for page in range(1,2):
+            g_pl_url='https://rate.tmall.com/list_detail_rate.htm?itemId='+str(itemId)+'&sellerId='+str(sellerId)+'&currentPage='+str(page)
+            htmls=requests.get(g_pl_url,  headers = header).text
+            titles=re.findall(r'"rateDetail":(.*?tags":""})',htmls)[0]
+            loads = demjson.decode(titles)   #loads = json.loads(title)           #.decode() 函数解码 JSON 数据。该函数返回 Python 字段的数据类型,即为 u'data'
+            pl_html=json.dumps(loads, indent=4, sort_keys=False, ensure_ascii=False)     #将 Python 对象编码成 JSON 字符串
+          #  print pl_html
+            displayUser=re.findall(r'"displayUserNick": "(.*?)",',pl_html)[0]
+            auctionSku=re.findall(r'"auctionSku": "(.*?)",',pl_html)[0]
+            rateDate =re.findall(r'"rateDate": "(.*?)"',pl_html)[0]
+            rateContent=re.findall(r'"rateContent": "(.*?)",',pl_html)[0]
+            print displayUser,auctionSku,rateDate,rateContent
+            print '成功获取评论信息：\n'
+
 
 
 
@@ -88,7 +144,7 @@ if __name__ == '__main__':
      sj='titles'+','+'price'+','+'selas'+','+'url'+','+'pi_url'+'\n'
      print '获取数据的字段为',sj
      time.sleep(1)
-     with open('sj.csv','a')as f:
+     with open('info.csv','a')as f:
            s=str(sj)
            f.write(s)
      print "已写入列名>>>>"
@@ -96,9 +152,8 @@ if __name__ == '__main__':
        print "列名写入有误：请检查>>>>>\n"
    print '现在开始爬取内容：\n_______'
    time.sleep(1)
-   try:
-     for yy in url_1():    #将page转化为整数，生成器要用for循环打印出，即是将函数赋予一个变量才可以进行遍历
-        time.sleep(1)
-        print yy
-   except:
-     pass
+   goods_url()   #将page转化为整数，生成器要用for循环打印出，即是将函数赋予一个变量才可以进行遍历
+
+
+
+
