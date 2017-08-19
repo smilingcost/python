@@ -5,6 +5,8 @@ import os
 
 
 USER_AGENT = 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 UBrowser/6.1.2716.5 Safari/537.36'
+header = { "User-Agent" :USER_AGENT  }
+
 def auto_down(file_name,file_path,r,start):
     try:
 
@@ -22,7 +24,7 @@ def auto_down(file_name,file_path,r,start):
 def afree(url):
  try:
     start=time.time()
-    r = requests.get(url,timeout=4) #设置超时时间，防止程序假死
+    r = requests.get(url,headers = header,timeout=2) #设置超时时间，防止程序假死
     list_name = url.split('/')       #分片
     file_name = list_name[len(list_name)-1]     #取最后一个字符串
     path="D:\\meinv\\afree"
@@ -34,7 +36,7 @@ def afree(url):
      pass
 if __name__=='__main__':
   print "开始下载文件>>>>>\n"
-  for i in range(141 ,5000):
-    url = 'http://live-hls-onebuild-cf.afreecatv.com/ko-livestream-02/1280x720/195047945-flash-original-hls_'+str(i)+'.ts'
+  for i in range(2635 ,5000):
+    url = 'http://live-hls-onebuild-cf.afreecatv.com/ko-livestream-05/1280x720/195281063-flash-original-hls_'+str(i)+'.ts'
     afree(url)
   print '文件下载完成'

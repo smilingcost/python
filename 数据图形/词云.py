@@ -49,7 +49,7 @@ from PIL import Image
 abel_mask = np.array(Image.open("stormtrooper_mask.png"))
 
 #读取要生成词云的文件
-text_from_file_with_apath = open('sj.csv').read()
+text_from_file_with_apath = open(u'E:\\学\\python代码\\爬虫\\淘宝_js-m\\info.csv').read()
 
 #通过jieba分词进行分词并通过空格分隔
 wordlist_after_jieba = jieba.cut(text_from_file_with_apath, cut_all = True)

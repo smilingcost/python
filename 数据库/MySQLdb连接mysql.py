@@ -10,8 +10,18 @@ cursor = db.cursor()
 cursor.execute("SELECT * from sj")
 # 使用 fetchone() 方法获取一条数据库。
 data = cursor.fetchall()
-print  data
-pric='태연'
+#print  data
+for row in data:
+    titles=row[0]  # 对中文字符串进行编码
+    price=row[1]
+    selas=row[2]
+    url=row[3]
+    pi_url=row[4]
+    print titles, price,selas,url,pi_url
+
+
+"""
+pric='태연겨울'
 #try:    #插入数据
 cursor.execute("insert into sj (titles, price,selas,url,pi_url) values ('%s','%s','%s','%s','%s')"%(pric,'pric2','pric3','pric4','pric5'))
 
@@ -27,7 +37,7 @@ except:
     print "删除数据失败!!!"
    # 发生错误时回滚
   #  db.rollback()
-
+"""
 # 关闭数据库连接
 db.commit()     #必须调用commit函数，否者你对数据库的所有操作将会失效！当断开连接时，所有悬挂的修改将会被重置。这很容易导致出错
 db.close()
