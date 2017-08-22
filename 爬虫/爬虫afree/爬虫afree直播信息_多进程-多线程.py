@@ -69,7 +69,7 @@ def bj_url(name,id,rank_f):       #获取需要爬虫的url
          print '主播---',id,'---信息获取完毕\n======================================================'
          time.sleep(1)
     except(Exception) ,e:
-        print "获取主播页面出错！！！！！！！！！！！\n======================================================",e
+        print "获取主播页面出错！！！！！!!!!!!!!!!!!!!!！！！！！！\n======================================================",e
         pass
     bj_thread(url,url_0,url_1,url_2,bj_f_rank,img_id)
 
@@ -102,7 +102,10 @@ def  bj_info(url,bj_f_rank):   #获取主播个人信息
      bj_id=docs.xpath('//span[@class="tt"]/text()')[0]
      bj_rank_all=docs.xpath('//div[@id="myranking"]/ul/li[1]/text()')[0]
      bj_follower=docs.xpath('//div[@class="my_bs_info"]/ul[1]/li[1]/span/text()')[0]
-     bj_stime=docs.xpath('//div[@class="my_bs_info"]/ul[1]/li[4]/span/text()')[0]
+     try:
+        bj_stime=docs.xpath('//div[@class="my_bs_info"]/ul[1]/li[4]/span/text()')[0]
+     except:
+         bj_stime='null'
      bj_swatch=docs.xpath('//div[@class="my_bs_info"]/ul[1]/li[5]/span/text()')[0]
      bj_last_time=docs.xpath('//div[@class="my_bs_guest"]/ul/li[1]/span/text()')[0]
      bj_last_visit=docs.xpath('//div[@class="my_bs_guest"]/ul/li[2]/span/text()')[0]
@@ -121,9 +124,9 @@ def  bj_info(url,bj_f_rank):   #获取主播个人信息
          print '成功保存BJ：%s 的信息\n======================================================'%(bj_name.encode('utf-8'))#韩语需进行编码
 
      except(Exception) ,e:
-         print "BJ %s 信息保存不成功\n======================================================"%(bj_name.encode('utf-8')),e
+         print "BJ %s 信息保存不成功\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"%(bj_name.encode('utf-8')),e
  except(Exception) ,e:
-       print "bj个人信息无法获取---跳过!!!\n======================================================",e
+       print "bj个人信息无法获取---跳过!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",e
        pass
 
 def bj_info_sql(bjs):
@@ -151,7 +154,7 @@ def bj_info_sql(bjs):
        cursor.execute("insert into bj (bj_f_rank,bj_name,bj_id,bj_rank_all,bj_follower,bj_stime,bj_swatch,bj_last_time,bj_last_visit,bj_last_up,bj_info_bs,img) values ('%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s')"%(bj_f_rank,bj_name,bj_id, bj_rank_all,bj_follower,bj_stime,bj_swatch,bj_last_time,bj_last_visit,bj_last_up,bj_info_bs,img))
        print "已成功插入数据>>>\n"
      except(Exception) ,e:
-         print "插入数据失败!!!",e
+         print "插入数据失败!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",e
          db.rollback()
      db.commit()     #必须调用commit函数，否者你对数据库的所有操作将会失效！当断开连接时，所有悬挂的修改将会被重置。这很容易导致出错
      db.close()
@@ -176,9 +179,9 @@ def bj_logo_img(logo_img_url,bj_f_rank):
             print "图片%s成功保存在：%r\n======================================================"%(file_name,path)
 
       except(Exception) ,e:
-        print "图片%s保存不成功\n======================================================"%(file_name),e
+        print "图片%s保存不成功\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"%(file_name),e
     else :
-        print "logo图片已存在---------\n======================================================"
+        print "logo图片已存在!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 
 def bj_img(url_0,img_id,bj_f_rank):    #bj主页图片信息
      print '图片信息--\n',url_0
@@ -230,11 +233,11 @@ if __name__ == '__main__':
            f.write(s)
         print "已写入列名>>>>"
       except:
-         print "列名写入有误：请检查>>>>>\n"
+         print "列名写入有误：请检查>>>>>！！！！！！！！！！！！！！！！\n"
       print '现在开始爬取内容：\n_______'
       time.sleep(1)
       start=time.time()
-      pool = multiprocessing.Pool(processes = 10)   #============_____多进程------------
+      pool = multiprocessing.Pool(processes = 4)   #============_____多进程------------
       bj_main()
       pool.close()      #=====================_____多进程------------
       pool.join()
