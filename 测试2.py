@@ -1,82 +1,47 @@
-#coding:utf-8
-#完成通用爬虫，抓取一个页面队列中所有图片
-
+#coding=utf-8
 import requests
-import re
 import time
-from redis import Redis
+import os
+import multiprocessing
 
-headers={ 'User-Agent':'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36' }
+USER_AGENT = 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 UBrowser/6.1.2716.5 Safari/537.36'
 
-def download(url):
+def auto_down(file_name,file_path,r,start,url):
     try:
-        r = requests.get(url,headers=headers,timeout = 50)
-        name = int(time.time())
-        f = open('D:/meinv/mzitu/'+str(name)+'.jpg','wb')
-        f.write(r.content)
-        f.close()
-    except Exception,e:
-        print Exception,":",e
-        return -1
+        print r.status_code        #返回响应状态码
+        r.raise_for_status()         #抛出异常
+        with open(file_path, "wb") as code:
+          code.write(r.content)
+        total_time = time.time() - start
+        print file_name,u"总共耗时：%f 秒" % total_time
+       # time.sleep(0.5)
+    except :
+        print 'url解析错误，将重新进行下载>>>'
+        time.sleep(2)
+        afree(url)
 
-def list_img_url(url):
-    try:
-        r = requests.get(url, timeout = 50 , headers=headers)
-        img_list = re.findall("http://pic.meizitu.com/wp-content/uploads/.*jpg",r.text)
-        print img_list
-        for i in img_list:
-            print i
-            download(i)
-    except:
-        pass
+def afree(url):
+ try:
+    print url
+    start=time.time()
+    r = requests.get(url) #设置超时时间，防止程序假死，即超过时间时执行下次循环
+    list_name = url.split('/')       #分片
+    file_name = list_name[len(list_name)-1]     #取最后一个字符串
+    path="D:\\meinv\\afree"
+    file_path='%s/%s'%(path,file_name)
+    if not os.path.exists(path):           #判断路径是否存在，不存在
+     os.makedirs(path)
+    auto_down(file_name,file_path,r,start,url)
+ except:
+     pass
+if __name__=='__main__':
+    pool = multiprocessing.Pool(processes = 2)     #processes = 3为进程数量
+    for i in range(1170 ,2000):
 
-def get_big_img_url():
-    r = Redis()
-    print r.keys('*')
-    while(1):
-        try:
-            url = r.lpop('meizitu')
-            return_1 = download(url)
-            if return_1 == -1:
-                return -1
-            time.sleep(1)
-            print url
-        except:
-            print "请求求发送失败重试"
-            time.sleep(10)
-            continue
-    return 0
+       url = 'http://live-hls-onebuild-cf.afreecatv.com/ko-livestream-01/1280x720/195483080-flash-original-hls_'+str(i)+'.ts'
+       pool.apply_async(afree, (url, ))   #维持执行的进程总数为processes，当一个进程执行完毕后会添加新的进程进去
 
-def push_redis_list(num):
-    r = Redis()
-    print r.keys('*')
-    for i in range(100):
-        num = num+i;#抓取的取件仅在num+100--num+200之间
-        url ='http://www.meizitu.com/a/'+ str(num) +'.html'
-        img_url = requests.get(url,timeout=30)
-        #print img_url.text
-        #time.sleep(10)
-        img_url_list = re.findall('http://pic.meizitu.com/wp-content/uploads/201.*.jpg',img_url.text)
-        print img_url_list
-        for temp_img_url in img_url_list:
-            l = len(re.findall('limg',temp_img_url))
-            #print l
-            if(l == 0):
-                print "url: ",temp_img_url
-                r.lpush('meizitu',temp_img_url)
-        print r.llen('meizitu')
-    return 0
-
-if __name__ == '__main__':
-    url = 'http://www.meizitu.com/a/list_1_'
-    print "begin"
-    push_redis_list(4100)#开启则加任务队列.其中的值请限制在5400以内。不过是用于计算页码的
-    get_big_img_url()#开启则运行爬取任务
-    push_redis_list(4500)#开启则加任务队列.其中的值请限制在5400以内。不过是用于计算页码的
-    get_big_img_url()#开启则运行爬取任务
-    push_redis_list(4400)#开启则加任务队列.其中的值请限制在5400以内。不过是用于计算页码的
-    get_big_img_url()#开启则运行爬取任务
-    push_redis_list(4300)#开启则加任务队列.其中的值请限制在5400以内。不过是用于计算页码的
-    get_big_img_url()#开启则运行爬取任务
-    push_redis_list(4200)#开启则加任务队列.其中的值请限制在5400以内。不过是用于计算页码的
-    get_big_img_url()#开启则运行爬取任务
+    print "开始下载文件>>>>>\n"
+    pool.close()
+    pool.join()   #调用join之前，先调用close函数，否则会出错。执行完close后不会有新的进程加入到pool,join函数等待所有子进程结束
+    print '文件下载完成'

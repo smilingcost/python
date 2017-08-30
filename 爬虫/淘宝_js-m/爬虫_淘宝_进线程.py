@@ -73,7 +73,7 @@ def goods_main_url(title):          #打开文件
       #  goods_infos(g_url)
       #  goods_pl(g_url)
         pool.apply_async(goods_info, (info,infos ))      #================_____多进程------------
-        pool.apply_async(goods_pl, (g_url, ))      #================_____多进程------------
+      #  pool.apply_async(goods_pl, (g_url, ))      #================_____多进程------------
         i+=1
 #------------------------def--------------------------------def-------------------------------def--------------------------------------def--------------------------def
 
@@ -102,12 +102,12 @@ def goods_info_sql(infos):
        url_sql=infos[5]
        pi_url_sql=infos[6]
  # 打开数据库连接
-       db=MySQLdb.connect(host="127.0.0.1",user="root",passwd="zjg123",db="tae",charset="utf8") #将localhost改为127.0.0.1，不然出错
+       db=MySQLdb.connect(host="127.0.0.1",user="root",passwd="zjg123",db="tbgoods",charset="utf8") #将localhost改为127.0.0.1，不然出错
 # 使用cursor()方法获取操作游标
        cursor = db.cursor()
 # 使用execute方法执行SQL语句
        try:
-          cursor.execute("insert into tb_info (s_name,itemId,titles, price,selas,url,pi_url) values ('%s','%s','%s','%s','%s','%s','%s')"%(s_name_sql,itemId_sql,titles_sql,price_sql,selas_sql,url_sql,pi_url_sql))
+          cursor.execute("insert into tb_info (s_name,ids,titles, price,selas,url,pi_url) values ('%s','%s','%s','%s','%s','%s','%s')"%(s_name_sql,itemId_sql,titles_sql,price_sql,selas_sql,url_sql,pi_url_sql))
           print "已成功插入数据>>>---------------------------\n",titles_sql,price_sql,selas_sql,url_sql,pi_url_sql
        except(Exception),e:
          print "插入数据失败!!!！！！！！！！！！！！！",e

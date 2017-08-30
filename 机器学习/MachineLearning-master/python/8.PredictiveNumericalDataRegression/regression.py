@@ -366,13 +366,13 @@ def crossValidation(xArr,yArr,numVal=10):
 
     #test for standRegression
 def regression1():
-    xArr, yArr = loadDataSet("input/8.Regression/data.txt")
+    xArr, yArr = loadDataSet("ex1.txt")
     xMat = mat(xArr)
     yMat = mat(yArr)
     ws = standRegres(xArr, yArr)
     fig = plt.figure()
     ax = fig.add_subplot(111)               #add_subplot(349)函数的参数的意思是，将画布分成3行4列图像画在从左到右从上到下第9块
-    ax.scatter(xMat[:, 1].flatten(), yMat.T[:, 0].flatten().A[0]) #scatter 的x是xMat中的第二列，y是yMat的第一列
+    ax.scatter(xMat[:, 1].flatten().A[0], yMat.T[:, 0].flatten().A[0]) #scatter 的x是xMat中的第二列，y是yMat的第一列
     xCopy = xMat.copy() 
     xCopy.sort(0)
     yHat = xCopy * ws
@@ -384,7 +384,7 @@ def regression1():
 
     #test for LWLR
 def regression2():
-    xArr, yArr = loadDataSet("input/8.Regression/data.txt")
+    xArr, yArr = loadDataSet("ex0.txt")
     yHat = lwlrTest(xArr, xArr, yArr, 0.003)
     xMat = mat(xArr)
     srtInd = xMat[:,1].argsort(0)           #argsort()函数是将x中的元素从小到大排列，提取其对应的index(索引)，然后输出
@@ -398,7 +398,7 @@ def regression2():
 
 #test for ridgeRegression
 def regression3():
-    abX,abY = loadDataSet("input/8.Regression/abalone.txt")
+    abX,abY = loadDataSet("abalone.txt")
     ridgeWeights = ridgeTest(abX, abY)
     fig = plt.figure()
     ax = fig.add_subplot(111)
@@ -408,7 +408,7 @@ def regression3():
 
 #test for stageWise
 def regression4():
-    xArr,yArr=loadDataSet("input/8.Regression/abalone.txt")
+    xArr,yArr=loadDataSet("abalone.txt")
     stageWise(xArr,yArr,0.01,200)
     xMat = mat(xArr)
     yMat = mat(yArr).T
@@ -419,7 +419,7 @@ def regression4():
     print (weights.T)
 
 if __name__ == "__main__":
-    # regression1()
+    regression1()
     regression2()
-    # regression3()
-    # regression4()
+    regression3()
+    regression4()

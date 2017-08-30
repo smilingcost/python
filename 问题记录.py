@@ -2,7 +2,11 @@
 import cookielib
 
 print u'连接mssql数据库编码问题导致数据无法写入数据库'
+"""
+#html转化为pdf;
+cmd:d:   wkhtmltopdf 网页url 保存的文件名
 
+"""
 
 print u'爬虫是遇到编码问题导致乱码或者是爬到的网页显示为空，例如网页韩语euc kr编码导致爬取不到代码'
 """   解决：增加请求头"""

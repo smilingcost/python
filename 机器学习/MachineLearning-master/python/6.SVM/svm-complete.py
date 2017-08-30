@@ -499,7 +499,7 @@ if __name__ == "__main__":
 
     # 无核函数的测试
     # 获取特征和目标变量
-    dataArr, labelArr = loadDataSet('input/6.SVM/testSet.txt')
+    dataArr, labelArr = loadDataSet('testSet.txt')
     # print labelArr
 
     # b是常量值， alphas是拉格朗日乘子
