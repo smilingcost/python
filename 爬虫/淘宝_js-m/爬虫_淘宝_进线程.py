@@ -73,7 +73,7 @@ def goods_main_url(title):          #打开文件
       #  goods_infos(g_url)
       #  goods_pl(g_url)
         pool.apply_async(goods_info, (info,infos ))      #================_____多进程------------
-      #  pool.apply_async(goods_pl, (g_url, ))      #================_____多进程------------
+        pool.apply_async(goods_pl, (g_url, ))      #================_____多进程------------
         i+=1
 #------------------------def--------------------------------def-------------------------------def--------------------------------------def--------------------------def
 
@@ -215,7 +215,7 @@ def goods_pl_sql(pl_infos):
        date_sql=pl_infos[3]
        content_sql=pl_infos[4]
  # 打开数据库连接
-       db=MySQLdb.connect(host="127.0.0.1",user="root",passwd="zjg123",db="tae",charset="utf8") #将localhost改为127.0.0.1，不然出错
+       db=MySQLdb.connect(host="127.0.0.1",user="root",passwd="zjg123",db="tbgoods",charset="utf8") #将localhost改为127.0.0.1，不然出错
 # 使用cursor()方法获取操作游标
        cursor = db.cursor()
 # 使用execute方法执行SQL语句

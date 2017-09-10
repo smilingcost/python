@@ -109,12 +109,12 @@ def jd_info_sql(infos):
        price_sql=infos[4]
        url_sql=infos[5]
  # 打开数据库连接
-       db=MySQLdb.connect(host="127.0.0.1",user="root",passwd="zjg123",db="tae",charset="utf8") #将localhost改为127.0.0.1，不然出错
+       db=MySQLdb.connect(host="127.0.0.1",user="root",passwd="zjg123",db="tbgoods",charset="utf8") #将localhost改为127.0.0.1，不然出错
 # 使用cursor()方法获取操作游标
        cursor = db.cursor()
 # 使用execute方法执行SQL语句
        try:
-          cursor.execute("insert into jd_info (s_name,id,store,titles,price,url) values ('%s','%s','%s','%s','%s','%s')"%(s_name_sql,id_sql,store_sql,title_sql,price_sql,url_sql))
+          cursor.execute("insert into tb_jd_info (s_name,ids,store,titles,price,url) values ('%s','%s','%s','%s','%s','%s')"%(s_name_sql,id_sql,store_sql,title_sql,price_sql,url_sql))
           print "已成功插入数据>>>----------------------\n",s_name_sql,id_sql,store_sql,title_sql,price_sql,url_sql
        except(Exception),e:
          print "插入数据失败!!!！！！！！！！！！！！！",e
@@ -172,12 +172,12 @@ def jd_pl_sql(pl_infos):
        date_sql=pl_infos[5]
        content_sql=pl_infos[6]
  # 打开数据库连接
-       db=MySQLdb.connect(host="127.0.0.1",user="root",passwd="zjg123",db="tae",charset="utf8") #将localhost改为127.0.0.1，不然出错
+       db=MySQLdb.connect(host="127.0.0.1",user="root",passwd="zjg123",db="tbgoods",charset="utf8") #将localhost改为127.0.0.1，不然出错
 # 使用cursor()方法获取操作游标
        cursor = db.cursor()
 # 使用execute方法执行SQL语句
        try:
-          cursor.execute("insert into jd_pl (id,selas,user,titles,sku,date,content) values ('%s','%s','%s','%s','%s','%s','%s')"%(id_sql,selas_sql,user_sql,titles_sql,sku_sql,date_sql,content_sql))
+          cursor.execute("insert into tb_jd_pl (ids,selas,user,titles,sku,date,content) values ('%s','%s','%s','%s','%s','%s','%s')"%(id_sql,selas_sql,user_sql,titles_sql,sku_sql,date_sql,content_sql))
           print "已成功插入评论数据>>>---------------------\n",id_sql,selas_sql,user_sql,titles_sql,sku_sql,date_sql,content_sql
        except(Exception),e:
          print "插入评论数据失败！！！！！！！！！！！！！！！！！",e
@@ -192,7 +192,7 @@ def jd_pl_sql(pl_infos):
 
 if __name__ == '__main__':
     try:
-     jd='s_name'+','+'d'+','+'store'+','+'titles'+','+'price'+','+'url'+'\n'
+     jd='s_name'+','+'ids'+','+'store'+','+'titles'+','+'price'+','+'url'+'\n'
      print '获取数据的字段为\n',jd
      time.sleep(1)
      with open('jd_info.csv','a')as f:
@@ -202,7 +202,7 @@ if __name__ == '__main__':
     except(Exception),e:
        print "列名写入有误：请检查>>>>>1\n",e
     try:
-       pl='id'+','+'selas'+','+'user'+','+'titles'+','+'sku'+','+'date'+','+'content'+'\n'
+       pl='ids'+','+'selas'+','+'user'+','+'titles'+','+'sku'+','+'date'+','+'content'+'\n'
        print '获取数据的字段为\n',pl
        with open('jd_pl.csv','a')as p:
            r=str(pl)
