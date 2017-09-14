@@ -102,19 +102,16 @@ def  bj_info(url,bj_f_rank):   #获取主播个人信息
      bj_id=docs.xpath('//span[@class="tt"]/text()')[0]
      bj_rank_all=docs.xpath('//div[@id="myranking"]/ul/li[1]/text()')[0]
      bj_follower=docs.xpath('//div[@class="my_bs_info"]/ul[1]/li[1]/span/text()')[0]
-     try:
-        bj_stime=docs.xpath('//div[@class="my_bs_info"]/ul[1]/li[4]/span/text()')[0]
-     except:
-         bj_stime='null'
      bj_swatch=docs.xpath('//div[@class="my_bs_info"]/ul[1]/li[5]/span/text()')[0]
      bj_last_time=docs.xpath('//div[@class="my_bs_guest"]/ul/li[1]/span/text()')[0]
      bj_last_visit=docs.xpath('//div[@class="my_bs_guest"]/ul/li[2]/span/text()')[0]
      bj_last_up=docs.xpath('//div[@class="my_bs_guest"]/ul/li[3]/span/text()')[0]
      bj_info_bs=docs.xpath('//p[@class="info_bs"]/text()')[0]
-   #  bj_logo_img(logo_img_url,bj_f_rank)
+     bj_url='http://www.afreecatv.com/'+str(bj_id)
+    # bj_logo_img(logo_img_url,bj_f_rank)
       #---------------------------保存主播信息----------------------------------------
-     bj=str(bj_f_rank)+'|'+bj_name.encode('utf-8')+'|'+bj_id+'|'+ bj_rank_all.encode('utf-8')+'|'+bj_follower+'|'+bj_stime+'|'+bj_swatch+'|'+bj_last_time+'|'+bj_last_visit+'|'+bj_last_up+'|'+bj_info_bs.encode('utf-8')+'|'+img+'\n'
-     bjs=[bj_f_rank,bj_name,bj_id, bj_rank_all,bj_follower,bj_stime,bj_swatch,bj_last_time,bj_last_visit,bj_last_up,bj_info_bs,img]
+     bj=str(bj_f_rank)+'|'+bj_name.encode('utf-8')+'|'+bj_id+'|'+ bj_rank_all.encode('utf-8')+'|'+bj_follower+'|'+bj_swatch+'|'+bj_last_time+'|'+bj_last_visit+'|'+bj_last_up+'|'+bj_info_bs.encode('utf-8')+'|'+bj_url+'|'+img+'\n'
+     bjs=[bj_f_rank,bj_name,bj_id, bj_rank_all,bj_follower,bj_swatch,bj_last_time,bj_last_visit,bj_last_up,bj_info_bs, bj_url,img]
      print '主播信息：',bj
      bj_info_sql(bjs)
      try:
@@ -137,21 +134,21 @@ def bj_info_sql(bjs):
      bj_id=bjs[2]
      bj_rank_all=bjs[3]
      bj_follower=bjs[4]
-     bj_stime=bjs[5]
-     bj_swatch=bjs[6]
-     bj_last_time=bjs[7]
-     bj_last_visit=bjs[8]
-     bj_last_up=bjs[9]
-     bj_info_bs=bjs[10]
+     bj_swatch=bjs[5]
+     bj_last_time=bjs[6]
+     bj_last_visit=bjs[7]
+     bj_last_up=bjs[8]
+     bj_info_bs=bjs[9]
+     bj_url=bjs[10]
      img=bjs[11]
-     print bj_f_rank,bj_name,bj_id, bj_rank_all,bj_follower,bj_stime,bj_swatch,bj_last_time,bj_last_visit,bj_last_up,bj_info_bs,img
+     print bj_f_rank,bj_name,bj_id, bj_rank_all,bj_follower,bj_swatch,bj_last_time,bj_last_visit,bj_last_up,bj_info_bs,bj_url,img
  # 打开数据库连接
-     db=MySQLdb.connect(host="127.0.0.1",user="root",passwd="zjg123",db="tae",charset="utf8") #将localhost改为127.0.0.1，不然出错
+     db=MySQLdb.connect(host="127.0.0.1",user="root",passwd="zjg123",db="tbgoods",charset="utf8") #将localhost改为127.0.0.1，不然出错
 # 使用cursor()方法获取操作游标
      cursor = db.cursor()
 # 使用execute方法执行SQL语句
      try:
-       cursor.execute("insert into bj (bj_f_rank,bj_name,bj_id,bj_rank_all,bj_follower,bj_stime,bj_swatch,bj_last_time,bj_last_visit,bj_last_up,bj_info_bs,img) values ('%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s')"%(bj_f_rank,bj_name,bj_id, bj_rank_all,bj_follower,bj_stime,bj_swatch,bj_last_time,bj_last_visit,bj_last_up,bj_info_bs,img))
+       cursor.execute("insert into tb_bj (bj_f_rank,bj_name,bj_id,bj_rank_all,bj_follower,bj_swatch,bj_last_time,bj_last_visit,bj_last_up,bj_info_bs,bj_url,img) values ('%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s')"%(bj_f_rank,bj_name,bj_id, bj_rank_all,bj_follower,bj_swatch,bj_last_time,bj_last_visit,bj_last_up,bj_info_bs,bj_url,img))
        print "已成功插入数据>>>\n"
      except(Exception) ,e:
          print "插入数据失败!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",e
@@ -167,7 +164,7 @@ def bj_logo_img(logo_img_url,bj_f_rank):
     print '主播头像图片信息--\n',logo_img_url
     path="D:\\meinv\\afreetv\\logo_img"
     list_name = logo_img_url.split('/')       #分片
-    file_name = str(bj_f_rank)+'-'+list_name[len(list_name)-1]    #取最后一个字符串
+    file_name = list_name[len(list_name)-1]    #取最后一个字符串
     file_path='%s/%s'%(path,file_name)
     if not os.path.exists(path):           #判断路径是否存在，不存在
                 os.makedirs(path)
@@ -226,7 +223,7 @@ def bj_article(url_2):
 if __name__ == '__main__':
      # count=1
       try:
-        bj='bj_f_rank'+'|'+'bj_name'+'|'+'bj_id'+'|'+'bj_rank_all'+'|'+'bj_follower'+'|'+'bj_stime'+'|'+'bj_swatch'+'|'+'bj_last_time'+'|'+'bj_last_visit'+'|'+'bj_last_up'+'|'+'bj_info_bs'+'|'+'img'+'\n'
+        bj='bj_f_rank'+'|'+'bj_name'+'|'+'bj_id'+'|'+'bj_rank_all'+'|'+'bj_follower'+'|'+'bj_swatch'+'|'+'bj_last_time'+'|'+'bj_last_visit'+'|'+'bj_last_up'+'|'+'bj_info_bs'+'|'+'bj_url'+'|'+'img'+'\n'
         print '获取数据的字段为',bj
         with open('bj.csv','a')as f:
            s=str(bj)

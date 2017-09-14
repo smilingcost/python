@@ -60,7 +60,11 @@ def goods_main_url(title):          #打开文件
     itemId=re.findall(r'"nid": "(.*?)"',html)
     titles=re.findall(r'"raw_title": "(.*?)"',html)        #定义需要爬取得内容
     price=re.findall(r'"view_price": "(.*?)"',html)
-    selas=re.findall(u'"view_sales": "(.*?)人收货"',html)
+    try:
+        selas=re.findall(u'"view_sales": "(.*?)人收货"',html)
+    except(Exception),e:
+        print "!!!!!!!!!!!!!!!!!!!!!!!!!",e
+        selas=null
     url   =re.findall(r'"comment_url": "(.*?)"',html)
     pi_url=re.findall(r'"pic_url": "(.*?)"',html)           #定义需要爬取得内容
     i=0
@@ -162,7 +166,7 @@ def goods_pl(g_url) :
                  except(E),e:
                     print '保存商品评论信息失败！！！！！！！！！！！！！！！！\n',e
             except(Exception),e:
-                print "页面获取失败",e
+                print "评论页面获取失败",e
                 pass
     elif 'item.taobao' in g_url:
         print '此为淘宝商品页面：'
@@ -202,7 +206,7 @@ def goods_pl(g_url) :
                  except(E),e:
                     print '保存商品评论信息失败！！！！！！！！！！！！！！\n',e
             except(Exception),e:
-                print "页面获取失败！！！！！！！！！！！！！！！",e
+                print "评论页面获取失败！！！！！！！！！！！！！！！",e
                 pass
 #------------------------def--------------------------------def-------------------------------def--------------------------------------def--------------------------def
 

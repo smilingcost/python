@@ -75,3 +75,54 @@ s_name,ids,store,titles,price,url
 游戏本,3929045,戴尔京东自营旗舰店,戴尔DELL灵越燃7000 R1525P 14.0英寸轻薄窄边框笔记本电脑(i5-7200U 4G 128GSSD+500G 2G独显 FHD)元気粉,5299.00,https://item.jd.com/3929045.html
 游戏本,4824733,戴尔京东自营旗舰店,戴尔DELL灵越游匣15PR-6748B 15.6英寸游戏笔记本电脑(i7-7700HQ 8G 128GSSD+1T GTX1050 4G独显 IPS)黑,7099.00,https://item.jd.com/4824733.html
 游戏本,4026118,华硕电脑京东官方旗舰店,华硕(ASUS) 顽石四代尊享版FL5900UQ 15.6英寸笔记本电脑 (i7-7500U 8G 1TB NV940MX 2G独显 深蓝 FHD) ,4498.00,https://item.jd.com/4026118.html
+s_name,ids,store,titles,price,url
+平板电脑,4675712,京东Apple产品专营店,Apple iPad 平板电脑 9.7英寸（128G WLAN版/A9 芯片/Retina显示屏/Touch ID技术 MPGW2CH/A）金色,3278.00,https://item.jd.com/4675712.html
+平板电脑,4675696,京东Apple产品专营店,Apple iPad 平板电脑 9.7英寸（32G WLAN版/A9 芯片/Retina显示屏/Touch ID技术 MPGT2CH/A）金色,2558.00,https://item.jd.com/4675696.html
+平板电脑,4675750,京东Apple产品专营店,Apple iPad 平板电脑 9.7英寸（128G WLAN版/A9 芯片/Retina显示屏/Touch ID技术 MP2J2CH/A）银色,3278.00,https://item.jd.com/4675750.html
+平板电脑,3989389,京东Apple产品专营店,Apple iPad 平板电脑 9.7英寸（32G WLAN版/A9 芯片/Retina显示屏/Touch ID技术 MP2G2CH/A）银色,2558.00,https://item.jd.com/3989389.html
+平板电脑,1892028,京东Apple产品专营店,Apple iPad mini 4 平板电脑 7.9英寸（128G WLAN版/A8芯片/Retina显示屏/Touch ID技术 MK9Q2CH）金色,3158.00,https://item.jd.com/1892028.html
+平板电脑,1892019,京东Apple产品专营店,Apple iPad mini 4 平板电脑 7.9英寸（128G WLAN版/A8芯片/Retina显示屏/Touch ID技术 MK9P2CH）银色,3158.00,https://item.jd.com/1892019.html
+平板电脑,4277202,微软官方自营旗舰店,【黑色键盘套装】微软（Microsoft）Surface Pro 4 （Intel i5 4G内存 128G存储 触控笔 预装Win10）,6188.00,https://item.jd.com/4277202.html
+平板电脑,4674884,京东Apple产品专营店,Apple iPad 平板电脑 9.7英寸（128G WLAN版/A9 芯片/Retina显示屏/Touch ID技术 MP2H2CH/A）深空灰色,3278.00,https://item.jd.com/4674884.html
+平板电脑,3659174,华为官方旗舰店,【送大礼包】华为(HUAWEI)M3 8.4英寸平板电脑(2K高清屏 麒麟950 哈曼卡顿音效 4G/32G WiFi)日晖金,1798.00,https://item.jd.com/3659174.html
+平板电脑,5222158,京东Apple产品专营店,Apple iPad Pro 平板电脑 10.5 英寸（256G WLAN版/A10X芯片/Retina屏/Multi-Touch技术 MPF12CH/A）金色,5788.00,https://item.jd.com/5222158.html
+平板电脑,1892018,京东Apple产品专营店,Apple iPad mini 4 平板电脑 7.9英寸（128G WLAN版/A8芯片/Retina显示屏/Touch ID技术 MK9N2CH）深空灰色,3158.00,https://item.jd.com/1892018.html
+s_name,ids,store,titles,price,url,pi_url
+平板电脑,4675712,京东Apple产品专营店,Apple iPad 平板电脑 9.7英寸（128G WLAN版/A9 芯片/Retina显示屏/Touch ID技术 MPGW2CH/A）金色,3278.00,https://item.jd.com/4675712.html,http://img12.360buyimg.com/n5/s54x54_jfs/t3214/177/9256496777/621169/2a1735b5/58d16208N55e7302b.jpg
+平板电脑,4675696,京东Apple产品专营店,Apple iPad 平板电脑 9.7英寸（32G WLAN版/A9 芯片/Retina显示屏/Touch ID技术 MPGT2CH/A）金色,2558.00,https://item.jd.com/4675696.html,http://img11.360buyimg.com/n5/s54x54_jfs/t4063/252/2569617591/621169/2a1735b5/58d20d5eN4de2034c.jpg
+平板电脑,4675750,京东Apple产品专营店,Apple iPad 平板电脑 9.7英寸（128G WLAN版/A9 芯片/Retina显示屏/Touch ID技术 MP2J2CH/A）银色,3278.00,https://item.jd.com/4675750.html,http://img10.360buyimg.com/n5/s54x54_jfs/t4507/264/556599884/598231/ee82085c/58d161e1Ne1b0e3b3.jpg
+平板电脑,3989389,京东Apple产品专营店,Apple iPad 平板电脑 9.7英寸（32G WLAN版/A9 芯片/Retina显示屏/Touch ID技术 MP2G2CH/A）银色,2558.00,https://item.jd.com/3989389.html,http://img14.360buyimg.com/n5/s54x54_jfs/t4687/112/548423108/598231/ee82085c/58d1617bN614200f1.jpg
+平板电脑,1892028,京东Apple产品专营店,Apple iPad mini 4 平板电脑 7.9英寸（128G WLAN版/A8芯片/Retina显示屏/Touch ID技术 MK9Q2CH）金色,3158.00,https://item.jd.com/1892028.html,http://img13.360buyimg.com/n5/s54x54_jfs/t2158/275/1115377524/647696/6c177b0/56792777N23d7cda0.png
+平板电脑,1892019,京东Apple产品专营店,Apple iPad mini 4 平板电脑 7.9英寸（128G WLAN版/A8芯片/Retina显示屏/Touch ID技术 MK9P2CH）银色,3158.00,https://item.jd.com/1892019.html,http://img14.360buyimg.com/n5/s54x54_jfs/t2101/320/1098736951/318677/f183adbd/56792713N3bcb41de.jpg
+平板电脑,4277202,微软官方自营旗舰店,【黑色键盘套装】微软（Microsoft）Surface Pro 4 （Intel i5 4G内存 128G存储 触控笔 预装Win10）,6188.00,https://item.jd.com/4277202.html,http://img12.360buyimg.com/n5/s54x54_jfs/t8440/32/689910841/217297/6cecc47a/59acf5bcN1d5da7be.jpg
+s_name,ids,store,titles,price,url,pi_url
+游戏本,5025518,联想电脑旗舰店,联想(Lenovo)拯救者R720 15.6英寸游戏笔记本电脑(i5-7300HQ 8G 1T+128G SSD GTX1050Ti 4G IPS 黑),6399.00,https://item.jd.com/5025518.html,http://img13.360buyimg.com/n5/s54x54_jfs/t9286/119/810267656/227457/736ac52e/59afa949N8ee125b6.jpg
+游戏本,4163951,联想电脑旗舰店,联想(Lenovo)拯救者R720 15.6英寸游戏笔记本电脑(i7-7700HQ 8G 1T+128G SSD GTX1050Ti 4G IPS 黑),6998.00,https://item.jd.com/4163951.html,http://img11.360buyimg.com/n5/s54x54_jfs/t8863/250/821641423/227457/736ac52e/59afa98fN61c1e391.jpg
+游戏本,4161503,小新铺子旗舰店,联想(Lenovo)小新潮5000 15.6英寸笔记本电脑(i7-7500U 4G 1T+128G 2G独显 FHD Office2016)银,4799.00,https://item.jd.com/4161503.html,http://img13.360buyimg.com/n5/s54x54_jfs/t6085/123/167619453/130982/8641cd19/592657b0Nf1a9912b.jpg
+游戏本,4130043,小新铺子旗舰店,联想(Lenovo)小新锐7000 15.6英寸游戏笔记本电脑(i5-7300HQ 8G 1T+128G PCIE GTX1050 2G IPS)黑,5499.00,https://item.jd.com/4130043.html,http://img13.360buyimg.com/n5/s54x54_jfs/t6775/141/1225479159/138288/7e9856be/597eaa85Ndc7b3e86.jpg
+游戏本,4846236,小新铺子旗舰店,联想(Lenovo)小新潮7000 14英寸轻薄窄边框笔记本电脑(i5-7200U 8G 1T+128G PCIE 940MX 2G)花火银,5599.00,https://item.jd.com/4846236.html,http://img11.360buyimg.com/n5/s54x54_jfs/t5962/305/8122889487/115038/7b41f5f/5983f0d3Nd1221b72.jpg
+游戏本,4338107,小米官方旗舰店,小米(MI)Air 13.3英寸全金属轻薄笔记本(i5-7200U 8G 256G PCle SSD MX150 2G独显 FHD 指纹识别 Win10）银,5199.00,https://item.jd.com/4338107.html,http://img12.360buyimg.com/n5/s54x54_jfs/t6700/155/2098998076/156185/6cf95035/595dd5a5Nc3a7dab5.jpg
+游戏本,5217606,戴尔京东自营旗舰店,戴尔DELL成就3559R-2628B 15.6英寸笔记本电脑 (i5-6200U 4G 1T M315 2G独显 DVD Win10)黑,3499.00,https://item.jd.com/5217606.html,http://img11.360buyimg.com/n5/s54x54_jfs/t6910/330/753912195/204307/15d9f081/597990c0N5b52cbeb.jpg
+游戏本,4335674,联想电脑旗舰店,联想(Lenovo)拯救者R720 15.6英寸游戏笔记本电脑(i5-7300HQ 8G 1T+128G SSD GTX1050 2G IPS 黑),5799.00,https://item.jd.com/4335674.html,http://img14.360buyimg.com/n5/s54x54_jfs/t8617/302/833226537/227457/736ac52e/59afa8d8N40951deb.jpg
+游戏本,4074575,小新铺子旗舰店,联想(Lenovo)小新潮7000 14英寸轻薄窄边框笔记本电脑(i7-7500U 8G 1T+128G PCIE 940MX 2G)花火银,6299.00,https://item.jd.com/4074575.html,http://img10.360buyimg.com/n5/s54x54_jfs/t5878/242/9174511473/115038/7b41f5f/5983f04aN48f6e6d1.jpg
+游戏本,3474436,戴尔京东自营旗舰店,戴尔DELL灵越燃7000 R1525S 14.0英寸轻薄窄边框笔记本电脑(i5-7200U 4G 128GSSD+500G 940MX 2G独显 FHD)银,4998.00,https://item.jd.com/3474436.html,http://img11.360buyimg.com/n5/s54x54_jfs/t6166/42/1889405300/132483/d97de745/5959d881N9d5ef4a7.jpg
+游戏本,5002534,小新铺子旗舰店,联想(Lenovo)小新锐7000 15.6英寸游戏笔记本电脑(i7-7700HQ 8G 1T+128G PCIE GTX1050 2G IPS)黑,6299.00,https://item.jd.com/5002534.html,http://img14.360buyimg.com/n5/s54x54_jfs/t5749/122/8808825805/138288/7e9856be/597ead18N0c40daaa.jpg
+游戏本,4824715,戴尔京东自营旗舰店,戴尔DELL灵越游匣15PR-6648B GTX1050 15.6英寸游戏笔记本电脑(i5-7300HQ 8G 128GSSD+1T 4G独显 IPS)黑,5999.00,https://item.jd.com/4824715.html,http://img10.360buyimg.com/n5/s54x54_jfs/t7768/184/1153704394/148460/f42e1432/599a930fN8a85626b.jpg
+游戏本,4274539,惠普官方旗舰店,惠普（HP）暗影精灵III代 15.6英寸游戏笔记本（i7-7700HQ 8G 128GSSD+1T GTX1050Ti 4G独显 120Hz IPS屏）,7699.00,https://item.jd.com/4274539.html,http://img14.360buyimg.com/n5/s54x54_jfs/t5704/263/1755481718/255187/9e609cb8/5929684fNbc2d3f94.jpg
+游戏本,4357281,神舟电脑自营旗舰店,神舟（HASEE）战神Z7-KP7GT 15.6英寸游戏本笔记本电脑(i7-7700HQ 8G 1T+128G SSD GTX1060 6G 1080P)黑色,6999.00,https://item.jd.com/4357281.html,http://img11.360buyimg.com/n5/s54x54_jfs/t6145/246/372581763/202081/bae3cc35/593e49efN0eaa764a.jpg
+游戏本,4707344,戴尔京东自营旗舰店,戴尔DELL灵越游匣15PR-5645B 15.6英寸游戏笔记本电脑(i5-7300HQ 8G 128GSSD+1T GTX1050 4G独显 FHD)黑,5799.00,https://item.jd.com/4707344.html,http://img14.360buyimg.com/n5/s54x54_jfs/t6646/269/1961523224/148460/f42e1432/595b3899N3fb898fd.jpg
+游戏本,3982192,华硕电脑京东官方旗舰店,华硕(ASUS) 顽石四代FL5700UP 15.6英寸笔记本电脑(i7-7500U 4G 1T 2G独显 FHD)黑色,4199.00,https://item.jd.com/3982192.html,http://img12.360buyimg.com/n5/s54x54_jfs/t6520/271/2268381844/231768/ee0952e/595f5174N21abd5a9.jpg
+游戏本,4431213,联想电脑旗舰店,联想(Lenovo)拯救者R720 GTX1060 MaxQ 15.6英寸游戏笔记本电脑(i7-7700HQ 8G 1T+128G SSD 6G IPS 黑),8499.00,https://item.jd.com/4431213.html,http://img13.360buyimg.com/n5/s54x54_jfs/t8662/250/837532131/227457/736ac52e/59afa9eeN560c9228.jpg
+游戏本,4294160,惠普官方旗舰店,惠普(HP)暗影精灵II代Pro 暗影红 15.6英寸游戏笔记本(i5-7300HQ 8G 128GSSD+1T GTX1050Ti 4G独显 IPS FHD),6299.00,https://item.jd.com/4294160.html,http://img10.360buyimg.com/n5/s54x54_jfs/t3157/231/5756125504/98807/97ab361d/588084a1N06efb01d.jpg
+游戏本,5352358,戴尔京东自营旗舰店,戴尔DELL灵越游匣Master15-R4645B 15.6英寸游戏笔记本电脑(i5-7300HQ 8G 128GSSD+1T GTX1050Ti 4G独显)黑,6999.00,https://item.jd.com/5352358.html,http://img13.360buyimg.com/n5/s54x54_jfs/t6829/285/2323659947/157875/eb09e4a9/598aae5aN7dfa3f72.jpg
+游戏本,3982202,华硕电脑京东官方旗舰店,华硕(ASUS) 顽石四代旗舰版FL5900UQ 15.6英寸笔记本电脑(i7-7500U 4G 128GSSD+1T 940MX 2G独显 FHD)深蓝,4799.00,https://item.jd.com/3982202.html,http://img12.360buyimg.com/n5/s54x54_jfs/t5878/352/2479795637/201591/d23a1872/5931182fN31cfa389.jpg
+游戏本,5020852,小新铺子旗舰店,联想(Lenovo)小新潮7000 14英寸轻薄窄边框笔记本电脑(i5-7200U 8G 1T+128G PCIE 940MX 2G)火花金,5599.00,https://item.jd.com/5020852.html,http://img12.360buyimg.com/n5/s54x54_jfs/t7075/281/728652824/120931/1d3fd264/5983f17fNd379c4c5.jpg
+游戏本,4257972,华硕电脑京东官方旗舰店,华硕(ASUS) 飞行堡垒尊享版二代FX53VD 15.6英寸游戏笔记本电脑(i7-7700HQ 8G 128GSSD+1T GTX1050 独显)红黑,6599.00,https://item.jd.com/4257972.html,http://img12.360buyimg.com/n5/s54x54_jfs/t6379/334/1932354873/477834/bc55c1ff/595b5ccfN30e2e96f.jpg
+游戏本,4233236,华硕电脑京东官方旗舰店,华硕(ASUS) 飞行堡垒尊享版二代FX53VD 15.6英寸游戏笔记本电脑(i7-7700HQ 8G 1T GTX1050 4G独显 FHD)红黑,6299.00,https://item.jd.com/4233236.html,http://img11.360buyimg.com/n5/s54x54_jfs/t5899/120/5162926402/477834/bc55c1ff/595b5c9dNf6bbfaa5.jpg
+游戏本,4824733,戴尔京东自营旗舰店,戴尔DELL灵越游匣15PR-6748B 15.6英寸游戏笔记本电脑(i7-7700HQ 8G 128GSSD+1T GTX1050 4G独显 IPS)黑,7099.00,https://item.jd.com/4824733.html,http://img13.360buyimg.com/n5/s54x54_jfs/t7669/353/1154512620/148460/f42e1432/599a9227N10e2fd8b.jpg
+游戏本,5168096,华硕电脑京东官方旗舰店,华硕(ASUS) 顽石四代旗舰版FL5900UQ 15.6英寸笔记本电脑(i7-7500U 4G 128GSSD+1T 940MX 2G独显 FHD)金色,4899.00,https://item.jd.com/5168096.html,http://img11.360buyimg.com/n5/s54x54_jfs/t5632/298/2278214820/132099/5140dc40/592f93d6Nd4739e3e.jpg
+游戏本,5205488,惠普官方旗舰店,惠普（HP）暗影精灵III代 15.6英寸游戏笔记本电脑（i7-7700HQ 8G 128GSSD+1T GTX1050Ti 4G独显 IPS FHD）,7299.00,https://item.jd.com/5205488.html,http://img13.360buyimg.com/n5/s54x54_jfs/t5908/322/605019198/255187/9e609cb8/5929684bNbb37e4d3.jpg
+游戏本,5025522,联想电脑旗舰店,联想(Lenovo)拯救者R720 15.6英寸游戏笔记本电脑(i5-7300HQ 8G 1T+256G SSD GTX1050Ti 4G IPS 黑),6899.00,https://item.jd.com/5025522.html,http://img12.360buyimg.com/n5/s54x54_jfs/t7564/187/2489647252/227457/736ac52e/59afa96aN36516e87.jpg
+游戏本,4274549,惠普官方旗舰店,惠普（HP）暗影精灵III代 15.6英寸游戏笔记本（i5-7300HQ 8G 128GSSD+1T GTX1050Ti 4G独显 120Hz IPS屏）,6999.00,https://item.jd.com/4274549.html,http://img14.360buyimg.com/n5/s54x54_jfs/t5905/289/585998020/255187/9e609cb8/59296840N5acd6fee.jpg
+游戏本,3842107,华硕电脑京东官方旗舰店,华硕(ASUS) 飞行堡垒尊享版二代FX53VD 15.6英寸游戏笔记本电脑(i5-7300HQ 8G 128GSSD+1T GTX1050 独显)红黑,5999.00,https://item.jd.com/3842107.html,http://img12.360buyimg.com/n5/s54x54_jfs/t6067/114/3918049992/477834/bc55c1ff/595b5cf3N8b8e7130.jpg
+游戏本,4026118,华硕电脑京东官方旗舰店,华硕(ASUS) 顽石四代尊享版FL5900UQ 15.6英寸笔记本电脑(i7-7500U 8G 1T 940MX 2G独显 FHD)深蓝,4599.00,https://item.jd.com/4026118.html,http://img13.360buyimg.com/n5/s54x54_jfs/t6097/194/1218616074/201591/d23a1872/59311858N5266de44.jpg

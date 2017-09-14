@@ -82,8 +82,9 @@ def jd_info(url,id):
     except:
         store='null'
     titles = doc.xpath('//div[@class="preview"]/div/img/@alt')[0]
-    info=s_name.decode("utf-8")+','+id+','+store+','+titles+','+price+','+url+'\n'
-    infos=[s_name.decode("utf-8"),id,store,titles,price,url]
+    pi_url = 'http:'+doc.xpath('//ul[@class="lh"]/li/img/@src')[0]
+    info=s_name.decode("utf-8")+','+id+','+store+','+titles+','+price+','+url+','+pi_url+'\n'
+    infos=[s_name.decode("utf-8"),id,store,titles,price,url,pi_url]
     print info
     try:
        with open('jd_info.csv','a')as f:         #保存最后爬取的信息
@@ -108,14 +109,15 @@ def jd_info_sql(infos):
        title_sql =infos[3]
        price_sql=infos[4]
        url_sql=infos[5]
+       pi_url_sql=infos[6]
  # 打开数据库连接
        db=MySQLdb.connect(host="127.0.0.1",user="root",passwd="zjg123",db="tbgoods",charset="utf8") #将localhost改为127.0.0.1，不然出错
 # 使用cursor()方法获取操作游标
        cursor = db.cursor()
 # 使用execute方法执行SQL语句
        try:
-          cursor.execute("insert into tb_jd_info (s_name,ids,store,titles,price,url) values ('%s','%s','%s','%s','%s','%s')"%(s_name_sql,id_sql,store_sql,title_sql,price_sql,url_sql))
-          print "已成功插入数据>>>----------------------\n",s_name_sql,id_sql,store_sql,title_sql,price_sql,url_sql
+          cursor.execute("insert into tb_jd_info (s_name,ids,store,titles,price,url,pi_url) values ('%s','%s','%s','%s','%s','%s','%s')"%(s_name_sql,id_sql,store_sql,title_sql,price_sql,url_sql,pi_url_sql))
+          print "已成功插入数据>>>----------------------\n",s_name_sql,id_sql,store_sql,title_sql,price_sql,url_sql,pi_url_sql
        except(Exception),e:
          print "插入数据失败!!!！！！！！！！！！！！！",e
          db.rollback()
@@ -192,7 +194,7 @@ def jd_pl_sql(pl_infos):
 
 if __name__ == '__main__':
     try:
-     jd='s_name'+','+'ids'+','+'store'+','+'titles'+','+'price'+','+'url'+'\n'
+     jd='s_name'+','+'ids'+','+'store'+','+'titles'+','+'price'+','+'url'+','+'pi_url''\n'
      print '获取数据的字段为\n',jd
      time.sleep(1)
      with open('jd_info.csv','a')as f:
