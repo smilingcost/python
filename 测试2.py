@@ -5,6 +5,6 @@ import os
 import multiprocessing
 import re
 
-im='static/img/qh/(1).gif'
-nid=re.findall(r'static/img/qh/\((.*?)\).gif',im)[0]
-print nid
+im=open(u'D:\BaiduYunDownload\mssql代码\公司2代码\kb\存储过程\HGGHQYML.SQL')
+
+print im.read().encode('utf-8')

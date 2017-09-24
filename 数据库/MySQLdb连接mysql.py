@@ -3,11 +3,19 @@
 import MySQLdb
 import time
 # 打开数据库连接
-db=MySQLdb.connect(host="127.0.0.1",user="root",passwd="zjg123",db="tae",charset="utf8") #将localhost改为127.0.0.1，不然出错
+db=MySQLdb.connect(host="127.0.0.1",user="root",passwd="zjg123",db="tbgoods",charset="utf8") #将localhost改为127.0.0.1，不然出错
 # 使用cursor()方法获取操作游标
 cursor = db.cursor()
 # 使用execute方法执行SQL语句
-cursor.execute("SELECT * from sj")
+cursor.execute("""
+               SELECT p.itemid,i.titles,count(*)
+               from tb_pl p
+               left join tb_info i on p.itemid=i.ids
+               group by p.itemid,i.titles
+               """)
+
+
+
 # 使用 fetchone() 方法获取一条数据库。
 data = cursor.fetchall()
 #print  data
@@ -15,9 +23,9 @@ for row in data:
     titles=row[0]  # 对中文字符串进行编码
     price=row[1]
     selas=row[2]
-    url=row[3]
-    pi_url=row[4]
-    print titles, price,selas,url,pi_url
+  #  url=row[3]
+ #   pi_url=row[4]
+    print titles, price,selas
 
 
 """
