@@ -13,14 +13,16 @@ print u'爬虫是遇到编码问题导致乱码或者是爬到的网页显示为
 
 print u'编码问题导致数据无法写入本地'
 """ 解决：s="数据".encode('utf-8'),s="数据"为unicode 编码，写入本地默认为gbk编码，故先将编码为，只限制于用正则，lxml获取到的数据，
-         如names=re.findall(r'"bj_nick": "(.*?)",',docs)[0].encode('utf-8')），若直接是names='금화S2',则不用转化"""
-
+         如names=re.findall(r'"bj_nick": "(.*?)",',docs)[0].encode('utf-8')），若直接是names='금화S2',则不用转化
+        爬虫时网页为gbk时，可用.encode("ISO-8859-1").encode("utf-8")转化为utf
+        """
 print u'编码问题导致数据读取是为乱码'
 """   如： f=open(u"爬虫\\淘宝_js-m\\sj.csv")
          r=f.read().encode("utf-8")
-      如：sql server 读出中文数据为乱码：
+      如：sql server 读出中文数据为乱码：utf-8
           titles=row[0].encode("ISO-8859-1").encode("utf-8")  （取决于数据库中字段的编码类型,此为varchar）
           “默认情况下，SQL Server 2000使用ISO字符集（代码页1252）。这个字符集也叫ISO-8859-1 Latin1 或者ANSI字符集。
+
 """
 
 print u'数据库编码问题导致数据读取是为乱码'
