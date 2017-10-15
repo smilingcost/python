@@ -39,9 +39,13 @@ def goods_main(i,url):
     except(Exception),e:
          print '获取网页失败，重新获取！！！！！！！！！！！！！！！',e
          goods_main(i,url)
-    titles = docs.xpath('//script[8]/text()')[0]          #爬取网页script的文本内容
+    try:
+       titles = docs.xpath('//script[8]/text()')[0]          #爬取网页script的文本内容
+       title=re.findall(r'g_page_config = (.*?shopcardOff":false}})',titles)[0]   #处理提取json格式里的内容
        #  print titles
-    title=re.findall(r'g_page_config = (.*?shopcardOff":false}})',titles)[0]   #处理提取json格式里的内容
+    except(Exception),e:
+        print e
+        pass
     goods_main_url(title)
     print '第%s页爬虫结束--------------------------\n'%(int(i+1))
 

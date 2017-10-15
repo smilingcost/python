@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-tb=pd.read_csv('sj.csv')             #读取文本
+tb=pd.read_csv('tb_info.csv')             #读取文本
 df=pd.DataFrame(tb,columns=['price'])          #获取指定列
 tb_s=np.where(df>6000,1,np.where(df>4000,2,3))    #将价格划分为3个等级
 

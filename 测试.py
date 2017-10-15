@@ -22,3 +22,6 @@ data=urllib.quote(s_name)       #将中文转为url编码格式
 %E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90
 %25E6%2595%25B0%25E6%258D%25AE%25E5%2588%2586%25E6%259E%2590
 print data
+
+
+
