@@ -39,9 +39,9 @@ def afree(url):
 if __name__=='__main__':
 
     pool = multiprocessing.Pool(processes = 10)     #processes = 3为进程数量
-    for i in range(329 ,3000):
+    for i in range(0 ,3000):
 
-       url = 'http://live-hls-local-cf.afreecatv.com/livestream-sg-04/1280x720/197007822-flash-original-hls_'+str(i)+'.ts'
+       url = 'http://videofile-hls-ko-vod-cf.afreecatv.com/video/_definst_/mp4:mvod/20171114/024/E0B789FD_198032024_3.mp4/media_w1215728150_'+str(i)+'.ts'
        pool.apply_async(afree, (url, ))   #维持执行的进程总数为processes，当一个进程执行完毕后会添加新的进程进去
 
     print "开始下载文件>>>>>\n"
