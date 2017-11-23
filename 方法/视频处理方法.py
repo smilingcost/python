@@ -1,10 +1,10 @@
 #coding=utf-8
 
-#视频合并
+
 import os
 import json
 import re
-
+#视频合并
 path='D:/meinv/afree/1.mp4'
 f=open(path,'wb')
 for i in range(0,14):
@@ -38,16 +38,16 @@ videoWriter.release()
 
 
 from moviepy.editor import *
-
+#视频剪切
 # Load myHolidays.mp4 and select the subclip 00:00:50 - 00:00:60负载myholidays.mp4选择子片段
-clip = VideoFileClip("myHolidays.mp4").subclip(50,60)
+clip = VideoFileClip(u"C:/Users/Administrator/Desktop/辅助管理及GSP管理.wmv").subclip(50,60)
 
 # Generate a text clip (many options available ! )生成文本剪辑（许多可用的选项）
-txt_clip = TextClip("My Holidays 2013",fontsize=70,color='white')
-txt_clip = txt_clip.set_pos('center').set_duration(10)
+#txt_clip = TextClip("My Holidays 2013",fontsize=70,color='white')
+#txt_clip = txt_clip.set_pos('center').set_duration(10)
 
 # Overlay the text clip above the first clip在第一个剪辑上方覆盖文本剪辑
-final_clip = CompositeVideoClip([clip, txt_clip])
+#final_clip = CompositeVideoClip([clip])
 
 # write the result to a file in any format以任何格式将结果写入文件
-final_clip.to_videofile("myHolidays_edited.avi",fps=25, codec='mpeg4')
+clip.to_videofile("myHolidays_edited.avi",fps=25, codec='mpeg4')

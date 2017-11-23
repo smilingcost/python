@@ -37,3 +37,4 @@ conn.commit()     #必须调用commit函数，否者你对数据库的所有操�
 conn.close()
 
 
+#sys.setdefaultencoding
