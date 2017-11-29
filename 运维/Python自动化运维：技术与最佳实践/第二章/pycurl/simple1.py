@@ -4,7 +4,7 @@ import time
 import sys
 import pycurl
 
-URL="http://www.google.com.hk"
+URL="http://192.168.1.193:93/universal/"
 c = pycurl.Curl()
 c.setopt(pycurl.URL, URL)
                 
