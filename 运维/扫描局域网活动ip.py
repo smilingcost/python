@@ -36,7 +36,7 @@ def ping_ip(ip_str):
   if flag:
       if ip_name:
         count+=1
-        print "ip: %s is ok ***and name is %s"%(ip_str,ip_name[0].encode('utf-8'))
+        print "ip: %s is ok ***and name is %s"%(ip_str,ip_name[0])#.encode('utf-8')
         print u"局域网共有%s台活动电脑"%count
         print  '-------------------------------------'
 def find_ip(ip_prefix):

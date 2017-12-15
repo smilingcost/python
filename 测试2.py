@@ -1,44 +1,30 @@
-# -*- coding: cp936 -*-
-import socket,select,threading,sys;
-
-host=socket.gethostname()
-
-addr=(host,5963)
-
-def conn():
-    s=socket.socket()
-    s.connect(addr)
-    return s
-
-def lis(s):
-    my=[s]
-    while True:
-        r,w,e=select.select(my,[],[])
-        if s in r:
-            try:
-                print s.recv(1024)
-            except socket.error:
-                print 'socket is error'
-                exit()
-
-def talk(s):
-    while True:
-        try:
-            info=raw_input()
-        except Exception,e:
-            print 'can\'t input'
-            exit()
-        try:
-            s.send(info)
-        except Exception,e:
-            print e
-            exit()
-
-def main():
-    ss=conn()
-    t=threading.Thread(target=lis,args=(ss,))
-    t.start()
-    t1=threading.Thread(target=talk,args=(ss,))
-    t1.start()
-if __name__=='__main__':
-    main()
+#coding=utf-8
+import wmi
+import time
+import platform
+ 
+def get_network_flow(os):
+    '''监控window平台下网卡的实时的流量信息
+    通过当前总流量和一秒后的总流量的差值，来统计实时的网卡流量信息;
+    返回的流量单位是KB
+    '''
+    if os == "Windows":
+        c = wmi.WMI()
+        for interfacePerTcp in c.Win32_PerfRawData_Tcpip_TCPv4():
+            sentflow = float(interfacePerTcp.SegmentsSentPersec)  #已发送的流量
+            receivedflow = float(interfacePerTcp.SegmentsReceivedPersec) #接收的流量
+            present_flow = sentflow+receivedflow    #算出当前的总流量
+        time.sleep(1)
+        for interfacePerTcp in c.Win32_PerfRawData_Tcpip_TCPv4():
+           sentflow = float(interfacePerTcp.SegmentsSentPersec)  #已发送的流量
+           receivedflow = float(interfacePerTcp.SegmentsReceivedPersec) #接收的流量
+           per_last_present_flow = sentflow+receivedflow     #算出1秒后当前的总流量
+        present_network_flow = (per_last_present_flow - present_flow)/1024
+        print "当前流量为：{0}KB".format("%.2f"%present_network_flow)
+        return "%.2f"%present_network_flow
+ 
+if __name__ =="__main__":
+    os = platform.system()
+    while 1:
+        flow = get_network_flow(os)
+        print "{0}KB".format(flow)

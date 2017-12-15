@@ -16,7 +16,7 @@ def auto_down(file_name,file_path,r,start,url):
           code.write(r.content)
         total_time = time.time() - start
         print file_name,u"总共耗时：%f 秒" % total_time
-       # time.sleep(0.5)
+        time.sleep(7)
     except(Exception),e :
         print e, 'url解析错误，将重新进行下载>>>'
         time.sleep(2)
@@ -26,7 +26,7 @@ def auto_down(file_name,file_path,r,start,url):
 def afree(url):
  try:
     start=time.time()
-    r = requests.get(url,headers = header) #设置超时时间，防止程序假死，即超过时间时执行下次循环
+    r = requests.get(url,headers = header,timeout=3) #设置超时时间，防止程序假死，即超过时间时执行下次循环
     list_name = url.split('/')       #分片
     file_name = list_name[len(list_name)-1]     #取最后一个字符串
     path="D:\\meinv\\afree"
@@ -38,10 +38,10 @@ def afree(url):
      pass
 if __name__=='__main__':
 
-    pool = multiprocessing.Pool(processes = 10)     #processes = 3为进程数量
-    for i in range(0 ,3000):
+    pool = multiprocessing.Pool(processes = 1)     #processes = 3为进程数量
+    for i in range(934 ,3000):
 
-       url = 'http://videofile-hls-ko-vod-cf.afreecatv.com/video/_definst_/mp4:mvod/20171114/024/E0B789FD_198032024_3.mp4/media_w1215728150_'+str(i)+'.ts'
+       url = 'http://live-hls-local-cf.afreecatv.com/livestream-sg-01/1024x576/198954188-common-original-hls_'+str(i)+'.ts'
        pool.apply_async(afree, (url, ))   #维持执行的进程总数为processes，当一个进程执行完毕后会添加新的进程进去
 
     print "开始下载文件>>>>>\n"
@@ -49,3 +49,5 @@ if __name__=='__main__':
     pool.join()   #调用join之前，先调用close函数，否则会出错。执行完close后不会有新的进程加入到pool,join函数等待所有子进程结束
     print '文件下载完成'
 
+#http://videofile-hls-ko-record-cf.afreecatv.com/video/_definst_/mvod/20171214/904/8294862E_198947904_1.mp4/media_w179758325_3.ts
+#http://videofile-hls-ko-record-cf.afreecatv.com/video/_definst_/mvod/20171214/904/D58801FB_198947904_2.mp4/media_w1271315448_301.ts
