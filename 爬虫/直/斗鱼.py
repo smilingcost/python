@@ -16,7 +16,7 @@ def auto_down(file_name,file_path,r,start,url):
           code.write(r.content)
         total_time = time.time() - start
         print file_name,u"总共耗时：%f 秒" % total_time
-        time.sleep(3.8)
+       # time.sleep(0.5)
     except(Exception),e :
         print e, 'url解析错误，将重新进行下载>>>'
         time.sleep(2)
@@ -26,9 +26,8 @@ def auto_down(file_name,file_path,r,start,url):
 def afree(url):
  try:
     start=time.time()
-    r = requests.get(url,headers = header,timeout=3) #设置超时时间，防止程序假死，即超过时间时执行下次循环
-    list_name = url.split('/')       #分片
-    file_name = list_name[len(list_name)-1]     #取最后一个字符串
+    r = requests.get(url,headers = header) #设置超时时间，防止程序假死，即超过时间时执行下次循环
+    file_name  = url.split('/')[5].split('?')[0]
     path="D:\\meinv\\afree"
     file_path='%s/%s'%(path,file_name)
     if not os.path.exists(path):           #判断路径是否存在，不存在
@@ -38,14 +37,21 @@ def afree(url):
      pass
 if __name__=='__main__':
 
-    pool = multiprocessing.Pool(processes = 1)     #processes = 3为进程数量
-    for i in range(1615 ,3000):
-
-       url = 'http://127.0.0.1:4144/199439475/1024x576/hls_'+str(i)+'.ts'
-       pool.apply_async(afree, (url, ))   #维持执行的进程总数为processes，当一个进程执行完毕后会添加新的进程进去
+    pool = multiprocessing.Pool(processes = 10)     #processes = 3为进程数量
+    for i in range(1 ,3000):
+      if i<10:
+         url ='http://vodhls1.douyucdn.cn/live/normal_wdf-265688-20171227150949/7b29215187b942f09bbe32390deafeaf_000000'+str(i)+'.ts'+'?k=5ec728a0b232abdefbbdf35b1b533436&t=5a439f96&u=182126254&ct=web&vid=2331603&d=1B4E22E3863C3DE2AADF5401A360937D'
+         pool.apply_async(afree, (url, ))   #维持执行的进程总数为processes，当一个进程执行完毕后会添加新的进程进去
+      elif i<100:
+         url = 'http://vodhls1.douyucdn.cn/live/normal_wdf-265688-20171227150949/7b29215187b942f09bbe32390deafeaf_00000'+str(i)+'.ts'+'?k=5ec728a0b232abdefbbdf35b1b533436&t=5a439f96&u=182126254&ct=web&vid=2331603&d=1B4E22E3863C3DE2AADF5401A360937D'
+         pool.apply_async(afree, (url, ))
+      else:
+         url = 'http://vodhls1.douyucdn.cn/live/normal_wdf-265688-20171227150949/7b29215187b942f09bbe32390deafeaf_0000'+str(i)+'.ts'+'?k=5ec728a0b232abdefbbdf35b1b533436&t=5a439f96&u=182126254&ct=web&vid=2331603&d=1B4E22E3863C3DE2AADF5401A360937D'
+         pool.apply_async(afree, (url, ))
 
     print "开始下载文件>>>>>\n"
     pool.close()
     pool.join()   #调用join之前，先调用close函数，否则会出错。执行完close后不会有新的进程加入到pool,join函数等待所有子进程结束
     print '文件下载完成'
 
+#http://vodhls1.douyucdn.cn/live/normal_wdf-265688-20171227150949/7b29215187b942f09bbe32390deafeaf_0000017.ts?k=5ec728a0b232abdefbbdf35b1b533436&t=5a439f96&u=182126254&ct=web&vid=2331603&d=1B4E22E3863C3DE2AADF5401A360937D
