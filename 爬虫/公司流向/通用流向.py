@@ -70,10 +70,30 @@ def exp():
     pl_htmls=json.dumps(loads, indent=4, sort_keys=False, ensure_ascii=False)     #将 Python 对象编码成 JSON 字符串
     pl = json.loads(pl_htmls)       #将json转化为字典
     print '页面响应码：', g.status_code,pl_htmls
-    for row in pl["rows"][0:-1]:
-        print row["customname"]
-    print '--------------------------------------'
+    seles_dx(pl)
 
+def seles_dx(pl):
+    print  '获取销售数据！！'
+    for row in pl["rows"][0:-1]:
+        customname=row["customname"]
+        goodsname=row["goodsname"]
+        goodstype=row["goodstype"]
+        inputdate=row["inputdate"]
+        goodsqty=row["goodsqty"]
+        goodsunit=row["goodsunit"]
+        lotno=row["lotno"]
+        salprice=row["salprice"]
+       # print  customname,goodsname, goodstype,inputdate, goodsqty, goodsunit, lotno,salprice
+       # print '--------------------------------------'
+        rows=customname+','+goodsname+','+goodstype+','+inputdate+','+ goodsqty+','+ goodsunit+','+ lotno+','+salprice+'\n'
+        try:
+           with open(u'大翔.csv','a')as f:         #保存最后爬取的信息
+               s=str(rows)
+               f.write(s)
+           print rows,'成功保存数据--------------------------\n'
+
+        except(Exception),e:
+             print '保存数据失败！！！！！！！！！！！！！！！！！！！！！\n',e
 if __name__ == '__main__':
 
         email = get_email()
