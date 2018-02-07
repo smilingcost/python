@@ -5,19 +5,26 @@ import time
 import sys
 
 #数据库服务器信息
-conn  = pymssql.connect(server="192.168.1.193", user="sa", password="ren@#3489", database="SIPEI",charset="ISO-8859-1")  #用此语句连接，获得连接对象。charset="ISO-8859-1"根据每台电脑实际设置
+conn  = pymssql.connect(server="192.168.1.193", user="sa", password="ren@#3489", database="ren",charset="ISO-8859-1")  #用此语句连接，获得连接对象。charset="ISO-8859-1"根据每台电脑实际设置
 
 cursor = conn.cursor()  # %获得游标。
 
-cursor.execute("""select  *
-                      from [dbo].[INFO_GOOD]
-                      where 1=1
+cursor.execute("""select a.exp_date ,
+sum(a.saleCount)
+from oa_crm_whFlow a
+left join rs_ygb s on s.YGBH=a.manager
+left join OA_CRM_DZCPFWXX cp on cp.cpbh=a.cpbh
+where isnull(a.org_id,1)=1 and isnull(a.enable,1)=1
+      -- and s.ygxm='付欣'
+group by a.exp_date,s.ygxm
 
-                      """)      #使用三引号的字符串来多行分解
+                      """)      #使用三引号的字符串来多行分解,
+#语句不能出现中文，不能用order by
+
 #如果update/delete/insert记得要conn.commit()
  #否则数据库事务无法提交
-info=cursor.fetchall()[0]
-print info[1]
+info=cursor.fetchall()
+print info
 time.sleep(1)
 """
 for row in info:
