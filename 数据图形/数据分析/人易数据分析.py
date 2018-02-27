@@ -80,5 +80,5 @@ if __name__ == '__main__':
     conn  = pymssql.connect(server="192.168.1.193", user="sa", password="ren@#3489", database="ren",charset="ISO-8859-1")  #用此语句连接，获得连接对象。charset="ISO-8859-1"根据每台电脑实际设置
     cursor = conn.cursor()  # %获得游标。
     font = FontProperties(fname=r"c:\windows\fonts\simsun.ttc", size=14)  #中文标签显示
-  #  fx()
-    fx1()
+    fx()
+ #   fx1()

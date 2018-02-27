@@ -12,6 +12,7 @@ import re
 import demjson
 from lxml import etree
 import lxml.html
+from selenium import webdriver
 
 session = requests.session()
 session.cookies =  cookielib.LWPCookieJar(filename='cookies')
@@ -54,8 +55,10 @@ def login(email, password, captcha):
 
 
 def exp(response,email):
+    star='2018-2-1'
+    end='2018-2-24'
     #登录后才能访问的网页
-    url ='http://www.crgdpharm.com/Service/Allfl?Mindate=2018-1-26&Maxdate=2018-2-5&Submit=+%B2%E9%BF%B4%CB%F9%D3%D0%B2%FA%C6%B7%B5%C4%C1%F7%CF%F2+'
+    url ='http://www.crgdpharm.com/Service/Allfl?Mindate='+star+'&Maxdate='+end+'&Submit=+%B2%E9%BF%B4%CB%F9%D3%D0%B2%FA%C6%B7%B5%C4%C1%F7%CF%F2+'
     #发送访问请求
     response = session.get(url).content
     html=response
@@ -112,19 +115,68 @@ def seles_dx(d,email,nemes):
         print '保存数据失败！！！！！！！！！！！！！！！！！！！！！\n',e
 
 
-def main1():
+
+
+def logins(email, password):
+    login_url='http://www.crgdpharm.com/'
+    #实例化出一个Firefox浏览器
+    driver = webdriver.Chrome()
+    #设置浏览器窗口的位置和大小
+    driver.set_window_position(20, 40)
+    driver.set_window_size(1100,700)
+    #打开一个页面（QQ空间登录页）
+    driver.get(login_url)
+    driver.find_element_by_id('ckhid').clear()             #使用 clear 方法去清除input或者textarea元素中的内容
+    driver.find_element_by_id('ckhid').send_keys(email)
+    driver.find_element_by_id('ckhsn').clear()
+    driver.find_element_by_id('ckhsn').send_keys(password)
+   # time.sleep(5)
+  #  driver.find_element_by_id('submit').click()    # 选择click函数还是submit函数。推荐每个都试一下，总会有一个成功的。
+    print '华润广东%s销售流向查询'%(email)
+    print '华润广东%s库存查询'%(email)
+
+
+
+def main11():
     email = '888482'
     password = '661890'
     captcha = get_captcha()
     login(email, password, captcha)
 
+def main1():
+    email = '888482'
+    password = '661890'
+    logins(email, password)
+
+def main2():
+    email = '888070'
+    password = 'gdzj'
+    logins(email, password)
+
+def main3():
+    email = '888293'
+    password = '891206'
+    logins(email, password)
 
 
+
+def main():
+    x=int(raw_input('请输入序号: '))
+    if x==1:
+       main1()
+       main()
+    elif x==2:
+       main2()
+       main()
+    elif x==3:
+       main3()
+       main()
 
 
 if __name__ == '__main__':
     count=1
-    main1()
+    main11()
+    main()
 
 
 

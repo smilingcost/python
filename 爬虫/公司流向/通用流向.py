@@ -54,6 +54,8 @@ def login(email, password, captcha):
     exp_kc(email)   #库存
 
 def exp(email):
+    star='2018-02-01'
+    end='2018-02-24'
     date={'startIndex':'0',
 'pageRowNum':'1000',
 'gridcode':'func-flowquerymgr-grid',
@@ -64,16 +66,16 @@ def exp(email):
 'sumfieldinfo':'',
 'fieldName_0':'certdatestart',
 'opera_0':'oper_big_equal',
-'value1_0':'2018-01-26',     #时间
+'value1_0':star,     #时间
 'fieldName_1':'certdate',
 'opera_1':'oper_big_equal',
-'value1_1':'2018-01-26',     #时间
+'value1_1':star,     #时间
 'fieldName_2':'certdateend',
 'opera_2':'oper_small_equal',
-'value1_2':'2018-02-05',    #时间
+'value1_2':end,    #时间
 'fieldName_3':'certdate',
 'opera_3':'oper_small_equal',
-'value1_3':'2018-02-05',     #时间
+'value1_3':end,     #时间
 'oper_length':'4'
           }
 

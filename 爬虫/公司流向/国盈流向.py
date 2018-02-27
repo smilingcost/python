@@ -55,6 +55,8 @@ def login(email, password, captcha):
     time.sleep(1)
 
 def exp(email):
+    star='2018-02-01'
+    end='2018-02-24'
     times =  int(round(time.time() * 1000))  #获取13位时间戳
     print times
     date={'_dc':str(times),
@@ -70,18 +72,18 @@ def exp(email):
 'sumfieldnames':'goodsqty',
 'fieldName_0':'credate__2',
 'opera_0':'oper_equal',
-'value1_0':'2018-02-05 23:59:59',    #时间
+'value1_0':end+' 23:59:59',    #时间
 'fieldName_1':'credate',
 'opera_1':'oper_between',
-'value1_1':'2018-01-01 00:00:00',    #时间
-'value2_1':'2018-02-05 23:59:59',    #时间
+'value1_1':star+' 00:00:00',    #时间
+'value2_1':end+' 23:59:59',    #时间
 'oper_length':'2',
 'page':'1',
 'start':'0',
 'limit':'25'
           }
 
-    url = 'http://www.gzmpc.com/gzmpcscm3/extjsgridQueryServlet/query?_dc='+str(times)+'&startIndex=0&pageRowNum=1000&needpagecount=&gridcode=func-salesflowsquery-grid&queryType=query&dataSource=salesflowsqueryquery&stagetype=SALESFLOWS&stageid=4&querymoduleid=FuncSalesflowsqueryNorQuery&sumfieldnames=goodsqty&fieldName_0=credate__2&opera_0=oper_equal&value1_0=2018-02-05%2023%3A59%3A59&fieldName_1=credate&opera_1=oper_between&value1_1=2018-01-01%2000%3A00%3A00&value2_1=2018-02-05%2023%3A59%3A59&oper_length=2&page=1&start=0&limit=25'
+    url = 'http://www.gzmpc.com/gzmpcscm3/extjsgridQueryServlet/query?_dc='+str(times)+'&startIndex=0&pageRowNum=1000&needpagecount=&gridcode=func-salesflowsquery-grid&queryType=query&dataSource=salesflowsqueryquery&stagetype=SALESFLOWS&stageid=4&querymoduleid=FuncSalesflowsqueryNorQuery&sumfieldnames=goodsqty&fieldName_0=credate__2&opera_0=oper_equal&value1_0='+end+'%2023%3A59%3A59&fieldName_1=credate&opera_1=oper_between&value1_1='+star+'%2000%3A00%3A00&value2_1='+end+'%2023%3A59%3A59&oper_length=2&page=1&start=0&limit=25'
     g=session.post(url,data = date,headers = headers)
     loads = demjson.decode(g.text)   #loads = json.loads(title)           #.decode() 函数解码 JSON 数据。该函数返回 Python 字段的数据类型,即为 u'data'
     pl_htmls=json.dumps(loads, indent=4, sort_keys=False, ensure_ascii=False)     #将 Python 对象编码成 JSON 字符串

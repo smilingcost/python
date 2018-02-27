@@ -55,6 +55,8 @@ def login(email, password, captcha):
     time.sleep(1)
 
 def exp(email):
+    star='2018-02-01'
+    end='2018-02-24'
     date={'startIndex':'0',
 'pageRowNum':'1000',
 'gridcode':'func-flowquerymgr2-grid',
@@ -65,16 +67,16 @@ def exp(email):
 'sumfieldinfo':'',
 'fieldName_0':'certdate',
 'opera_0':'oper_big_equal',
-'value1_0':'2018-01-01',       #时间
+'value1_0':star,       #时间
 'fieldName_1':'certdatestart',
 'opera_1':'oper_big_equal',
-'value1_1':'2018-01-01',       #时间
+'value1_1':star,       #时间
 'fieldName_2':'certdate',
 'opera_2':'oper_small_equal',
-'value1_2':'2018-02-02',       #时间
+'value1_2':end,       #时间
 'fieldName_3':'certdateend',
 'opera_3':'oper_small_equal',
-'value1_3':'2018-02-02',      #时间
+'value1_3':end,      #时间
 'oper_length':'4'
           }
 
@@ -117,6 +119,8 @@ def seles_dx(pl,email):
              print '保存数据失败！！！！！！！！！！！！！！！！！！！！！\n',e
 
 def exp_kc(email):
+    star='2018-02-01'
+    end='2018-02-24'
     date={'startIndex':'0',
 'pageRowNum':'1000',
 'gridcode':'func-stockquerymgr2-grid',
@@ -127,16 +131,16 @@ def exp_kc(email):
 'sumfieldinfo':'',
 'fieldName_0':'certdate',
 'opera_0':'oper_big_equal',
-'value1_0':'2018-01-26',
+'value1_0':star,
 'fieldName_1':'certdatestart',
 'opera_1':'oper_big_equal',
-'value1_1':'2018-01-26',
+'value1_1':star,
 'fieldName_2':'certdate',
 'opera_2':'oper_small_equal',
-'value1_2':'2018-02-05',
+'value1_2':end,
 'fieldName_3':'certdateend',
 'opera_3':'oper_small_equal',
-'value1_3':'2018-02-05',
+'value1_3':end,
 'oper_length':'4'
           }
 
