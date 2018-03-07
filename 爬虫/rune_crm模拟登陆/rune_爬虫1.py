@@ -6,8 +6,8 @@ import time
 
 
 #登录时需要POST的数据
-data = {'mbShortname':'zhangjingui',
-         'mbPassword':'5a6i1q4ij3i8n2g2u3i8@2#2132832',
+data = {'mbShortname':'***',
+         'mbPassword':'***',
         'valiNo':'3822',
         'Submit':'(unable to decode value)',
         'loginto':'runecrm' }
