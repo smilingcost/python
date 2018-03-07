@@ -7,7 +7,7 @@ import pymssql
 def mysql(titles, price,selas,url,pi_url):
     print '开始写入mysql数据库>>>\n'
     # 打开数据库连接
-    db=MySQLdb.connect(host="127.0.0.1",user="root",passwd="zjg123",db="tae",charset="utf8") #将localhost改为127.0.0.1，不然出错
+    db=MySQLdb.connect(host="127.0.0.1",user="root",passwd="*****",db="tae",charset="utf8") #将localhost改为127.0.0.1，不然出错
     # 使用cursor()方法获取操作游标
     cursor = db.cursor()
     # 使用execute方法执行SQL语句
@@ -38,7 +38,7 @@ except:
 def mssql():
     #数据库服务器信息
     print "开始获取sql server 数据库信息>>>\n"
-    conn  = pymssql.connect(server="192.168.1.114", user="sa", password="zjg123", database="tae",charset="ISO-8859-1")  #用此语句连接，获得连接对象。charset="ISO-8859-1"根据每台电脑实际设置
+    conn  = pymssql.connect(server="192.168.1.114", user="sa", password="*****", database="tae",charset="ISO-8859-1")  #用此语句连接，获得连接对象。charset="ISO-8859-1"根据每台电脑实际设置
 
     cursor = conn.cursor()  # %获得游标。
 

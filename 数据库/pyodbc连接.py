@@ -3,7 +3,7 @@
 import pyodbc
 import time
 #数据库服务器信息
-conn  = pyodbc.connect(DRIVER="{SQL Server Native Client 10.0}",SERVER="192.168.1.114",DATABASE="tae",UID="sa",PWD="zjg123", charset='UTF-8')  #用此语句连接，获得连接对象。
+conn  = pyodbc.connect(DRIVER="{SQL Server Native Client 10.0}",SERVER="192.168.1.114",DATABASE="tae",UID="sa",PWD="*****", charset='UTF-8')  #用此语句连接，获得连接对象。
 
 cursor = conn.cursor()  # %获得游标。
 

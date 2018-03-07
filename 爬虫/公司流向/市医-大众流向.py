@@ -50,8 +50,8 @@ def login(email, password, captcha):
     time.sleep(1)
 
 def exp(email):
-    star='2018-02-01'
-    end='2018-02-24'
+    star='2018-02-25'
+    end='2018-03-05'
     times =  int(round(time.time() * 1000))  #获取13位时间戳
     print times
     date={'_dc':str(times),
@@ -172,8 +172,8 @@ def seles_dx_kc(pl,email):
              print '保存数据失败！！！！！！！！！！！！！！！！！！！！！\n',e
 
 def exp1(email):
-    star='2018-02-01'
-    end='2018-02-24'
+    star='2018-02-25'
+    end='2018-03-05'
     times =  int(round(time.time() * 1000))  #获取13位时间戳
     print times
     date={'_dc':str(times),

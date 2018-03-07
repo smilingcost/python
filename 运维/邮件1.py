@@ -8,7 +8,7 @@ from email.mime.image import MIMEImage
 # 第三方 SMTP 服务
 mail_host="smtp.ym.163.com"  #设置服务器
 mail_user="zhangjingui@kabala365.com"    #用户名
-mail_pass="Zjg123"   #口令
+mail_pass="***"   #口令
 
 
 sender = 'zhangjingui@kabala365.com'
@@ -16,7 +16,7 @@ receivers = ['954950195@qq.com']  # 接收邮件，可设置为你的QQ邮箱或
 
 #创建一个带附件的实例
 message = MIMEMultipart()
-message['From'] = Header("张进桂", 'utf-8')
+message['From'] = Header("***", 'utf-8')
 message['To'] =  Header("954950195@qq.com", 'utf-8')
 subject = '邮件测试'
 message['Subject'] = Header(subject, 'utf-8')

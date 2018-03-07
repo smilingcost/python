@@ -108,7 +108,7 @@ def  bj_info(url,bj_f_rank):   #获取主播个人信息
      bj_last_up=docs.xpath('//div[@class="my_bs_guest"]/ul/li[3]/span/text()')[0]
      bj_info_bs=docs.xpath('//p[@class="info_bs"]/text()')[0]
      bj_url='http://www.afreecatv.com/'+str(bj_id)
-    # bj_logo_img(logo_img_url,bj_f_rank)
+     bj_logo_img(logo_img_url,bj_f_rank)
       #---------------------------保存主播信息----------------------------------------
      bj=str(bj_f_rank)+'|'+bj_name.encode('utf-8')+'|'+bj_id+'|'+ bj_rank_all.encode('utf-8')+'|'+bj_follower+'|'+bj_swatch+'|'+bj_last_time+'|'+bj_last_visit+'|'+bj_last_up+'|'+bj_info_bs.encode('utf-8')+'|'+bj_url+'|'+img+'\n'
      bjs=[bj_f_rank,bj_name,bj_id, bj_rank_all,bj_follower,bj_swatch,bj_last_time,bj_last_visit,bj_last_up,bj_info_bs, bj_url,img]

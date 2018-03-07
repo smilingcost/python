@@ -17,7 +17,7 @@ BODY = string.join((          # 组装 sendma il 方法的邮件主体内容 ，
 server = smtplib.SMTP()      #创建一个 SMTP （ ） 对象
 server.connect(HOST,"25")   # 通过 connect 方法连接 smtp 主机
 server.starttls()        # 启动安全传输模式
-server.login("zhangjingui@kabala365.com","Zjg123")      # 邮箱账号登录校验
+server.login("zhangjingui@kabala365.com","***")      # 邮箱账号登录校验
 server.sendmail(FROM, [TO], BODY)            # 邮件发送
 server.quit()  # 断开 smtp 连接
 
