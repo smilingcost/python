@@ -81,9 +81,6 @@ if __name__ == '__main__':
         captcha = get_captcha()
         login(email, password, captcha)
 
-#http://183.62.21.82:1666/wtyyecs/loginSuccess.do
-#244
-#003658
 
 
 
