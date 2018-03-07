@@ -18,7 +18,11 @@ def main(login_url):
     driver.find_element_by_name('mbShortname').clear()             #使用 clear 方法去清除input或者textarea元素中的内容
     driver.find_element_by_name('mbShortname').send_keys('daiding')
     driver.find_element_by_name('mbPassword').clear()
+<<<<<<< HEAD
     driver.find_element_by_name('mbPassword').send_keys('*****')
+=======
+    driver.find_element_by_name('mbPassword').send_keys('***')
+>>>>>>> origin/master
     time.sleep(10)
     driver.find_element_by_name('Submit').click()    # 选择click函数还是submit函数。推荐每个都试一下，总会有一个成功的。
     time.sleep(10)                     #等待Cookies完全加载，很重要

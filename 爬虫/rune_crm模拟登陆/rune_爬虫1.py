@@ -6,8 +6,13 @@ import time
 
 
 #登录时需要POST的数据
+<<<<<<< HEAD
 data = {'mbShortname':'*****',
          'mbPassword':'*****',
+=======
+data = {'mbShortname':'***',
+         'mbPassword':'***',
+>>>>>>> origin/master
         'valiNo':'3822',
         'Submit':'(unable to decode value)',
         'loginto':'runecrm' }
