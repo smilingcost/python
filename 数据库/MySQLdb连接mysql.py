@@ -3,7 +3,7 @@
 import MySQLdb
 import time
 # 打开数据库连接
-db=MySQLdb.connect(host="127.0.0.1",user="root",passwd="zjg123",db="tbgoods",charset="utf8") #将localhost改为127.0.0.1，不然出错
+db=MySQLdb.connect(host="127.0.0.1",user="root",passwd="*****",db="tbgoods",charset="utf8") #将localhost改为127.0.0.1，不然出错
 # 使用cursor()方法获取操作游标
 cursor = db.cursor()
 # 使用execute方法执行SQL语句
