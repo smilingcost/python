@@ -81,10 +81,7 @@ if __name__ == '__main__':
         captcha = get_captcha()
         login(email, password, captcha)
 
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/master
 
 
 
