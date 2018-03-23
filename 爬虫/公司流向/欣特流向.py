@@ -54,8 +54,8 @@ def login(email, password, captcha):
     exp_kc(email)   #库存
 
 def exp(email):
-    star='2018-02-25'
-    end='2018-03-05'
+    star='2018-03-01'
+    end='2018-03-19'
     times =  int(round(time.time() * 1000))  #获取13位时间戳
     print times
     date={'_dc':str(times),

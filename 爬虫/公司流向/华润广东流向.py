@@ -50,13 +50,13 @@ def login(email, password, captcha):
     login_url = 'http://www.crgdpharm.com/Login_check'
     response = session.post(login_url, data=data, headers=headers)
     session.cookies.save()
-    exp(response,email)
+    exp(response,email)     #数据不是XHR 请求，需要传入response参数
     time.sleep(1)
 
 
 def exp(response,email):
-    star='2018-2-1'
-    end='2018-2-24'
+    star='2018-3-1'
+    end='2018-3-19'
     #登录后才能访问的网页
     url ='http://www.crgdpharm.com/Service/Allfl?Mindate='+star+'&Maxdate='+end+'&Submit=+%B2%E9%BF%B4%CB%F9%D3%D0%B2%FA%C6%B7%B5%C4%C1%F7%CF%F2+'
     #发送访问请求

@@ -55,8 +55,8 @@ def login(email, password, captcha):
     time.sleep(1)
 
 def exp(email):
-    star='2018-02-25'
-    end='2018-03-05'
+    star='2018-03-01'
+    end='2018-03-19'
     date={'startIndex':'0',
 'pageRowNum':'1000',
 'gridcode':'func-flowquerymgr-grid',

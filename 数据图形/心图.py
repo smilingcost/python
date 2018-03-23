@@ -3,7 +3,7 @@ from time import sleep
 a= int(input("输入一个数: "))
 b=a*4-3
 left= 30
-print '\033[5;30;47m'    #设置颜色
+#print '\033[5;30;47m'    #设置颜色
 for num in range(0,a):
     print(' '*(left-num*2)+'*'+' '*num*4+'*'+' '*(b-num*4)+'*'+' '*num*4+'*')   #上半部，一行4颗*
     sleep(0.1)                      #延迟时间
