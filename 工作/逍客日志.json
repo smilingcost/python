@@ -1,0 +1,2452 @@
+{
+  "value": {
+    "partialResult": false,
+    "keyWords": [
+      
+    ],
+    "items": [
+      {
+        "feedID": 74640,
+        "employeeID": 1030,
+        "sender": {
+          "gender": "M",
+          "employeeID": 1030,
+          "name": "谢尚磊",
+          "profileImage": "N_201511_19_b62201a50a414b7fa87bf9e66899e5cd",
+          "department": "思沛大家庭, 市场推广部B组",
+          "post": "学术专员"
+        },
+        "feedContentLength": 0,
+        "source": 203,
+        "sourceDescription": "纷享iPhone",
+        "createTime": 1525967167,
+        "feedType": 2,
+        "feedTypeDescription": "日志",
+        "isPublic": true,
+        "replyCount": 1,
+        "isUnRead": false,
+        "followTime": 0,
+        "canDelete": false,
+        "canReply": true,
+        "isEncrypted": false,
+        "encryptTitle": "",
+        "importTime": "0001-01-01T08:00:00+08:00",
+        "importer": 0,
+        "subtitle": "",
+        "senderRole": 1,
+        "pictures": [
+          
+        ],
+        "files": [
+          
+        ],
+        "employeeRange": "全公司，张锐",
+        "lastUpdateTime": 1526010039,
+        "feedRangeDescription": "全公司，1个部门，1个同事",
+        "feedRangeTip": "全公司，张锐",
+        "feedRangeEntities": [
+          {
+            "dataID": 1043,
+            "name": "张锐",
+            "isCircle": false
+          },
+          {
+            "dataID": 999999,
+            "name": "",
+            "isCircle": true
+          }
+        ],
+        "smsRemaindCount": 0,
+        "readCount": 0,
+        "feedContent": [
+          
+        ],
+        "plan": {
+          "leaderID": 1043,
+          "leader": {
+            "gender": "M",
+            "employeeID": 1043,
+            "name": "张锐",
+            "profileImage": "N_201607_06_f5c238f7491f4013b753e142d1f4176d",
+            "department": "市场推广部, 思沛大家庭",
+            "post": "副总经理"
+          },
+          "reportContent": [
+            {
+              "type": 0,
+              "text": "跟进南五药房廖主任，她表示她会注意库存，商业没货她也没办法，我跟她沟通解释了这个问题，跟进客户邓，皮。下午去了林和，交了布洛芬的资料，答谢了他，明天开会会帮我进。",
+              "apiName": "",
+              "objectType": 0,
+              "feedId": 0,
+              "subType": 0
+            }
+          ],
+          "planContent": [
+            {
+              "type": 0,
+              "text": "跟进林和药事会，答谢洪，段",
+              "apiName": "",
+              "objectType": 0,
+              "feedId": 0,
+              "subType": 0
+            }
+          ],
+          "isComment": true,
+          "rate": 3,
+          "planType": 1,
+          "canComment": false,
+          "reportContentLength": 81,
+          "planContentLength": 13,
+          "crmStartTime": 0,
+          "crmEndTime": 0,
+          "metadataApiName": "",
+          "metadataLayoutId": "",
+          "metadataVersion": "0",
+          "metadataId": "",
+          "templateId": "b33100738d874967adceb22a491caab4",
+          "templateName": "日计划",
+          "sectionType": 1,
+          "cycleType": 1,
+          "planText": "2018年05月10日 日计划，由张锐点评",
+          "reportPrompt": "今日工作总结",
+          "planPrompt": "明日工作计划",
+          "contentPrompt": "工作心得体会",
+          "crmResourceIds": [
+            
+          ]
+        },
+        "replies": [
+          {
+            "feedReplyID": 11509,
+            "feedID": 74640,
+            "employeeID": 1043,
+            "sender": {
+              "gender": "M",
+              "employeeID": 1043,
+              "name": "张锐",
+              "profileImage": "N_201607_06_f5c238f7491f4013b753e142d1f4176d",
+              "department": "市场推广部, 思沛大家庭",
+              "post": "副总经理"
+            },
+            "createTime": 1526010039,
+            "source": 303,
+            "sourceDescription": "纷享Android",
+            "replyContentLength": 8,
+            "replyContent": [
+              {
+                "type": 0,
+                "text": "三分：符合要求 ",
+                "apiName": "",
+                "objectType": 0,
+                "feedId": 0,
+                "subType": 0
+              }
+            ],
+            "isUnRead": false,
+            "pictures": [
+              
+            ],
+            "files": [
+              
+            ],
+            "operationType": 1,
+            "like": {
+              "likeCount": 0
+            },
+            "isAlreadyLike": false,
+            "isDeleted": false,
+            "deleteAble": false,
+            "roleType": 0
+          }
+        ],
+        "timingMessageRemaindsCount": 0,
+        "like": {
+          "likeCount": 0
+        },
+        "isAlreadyLike": false,
+        "reward": {
+          "rewardCount": 0
+        },
+        "isAlreadyReward": false,
+        "isFollowed": false,
+        "isArchived": false,
+        "isFeedLiked": false,
+        "feedNDFiles": [
+          
+        ],
+        "qrCode": "ZnM6Ly9mZWVkL2NvbW1vbi9pbmZvP3siZmVlZElkIjogNzQ2NDAsICJzdWJUeXBlIjoyLCJlYSI6Imd6c3B5eSJ9",
+        "feedWorkNoticeRangesUnread": [
+          
+        ],
+        "feedWorkNoticeRangesReaded": [
+          
+        ],
+        "feedWorkNoticeRangesConfirmed": [
+          
+        ],
+        "woTemplates": [
+          
+        ],
+        "feedExtInfos": [
+          
+        ]
+      },
+      {
+        "feedID": 74639,
+        "employeeID": 1168,
+        "sender": {
+          "gender": "F",
+          "employeeID": 1168,
+          "name": "郭佩佩",
+          "profileImage": "N_201712_26_04b573fb341346c0b6b557d1640b8a60",
+          "department": "思沛大家庭, 市场推广部B组",
+          "post": "学术专员"
+        },
+        "feedContentLength": 0,
+        "source": 203,
+        "sourceDescription": "纷享iPhone",
+        "createTime": 1525966301,
+        "feedType": 2,
+        "feedTypeDescription": "日志",
+        "isPublic": true,
+        "replyCount": 1,
+        "isUnRead": false,
+        "followTime": 0,
+        "canDelete": false,
+        "canReply": true,
+        "isEncrypted": false,
+        "encryptTitle": "",
+        "importTime": "0001-01-01T08:00:00+08:00",
+        "importer": 0,
+        "subtitle": "",
+        "senderRole": 1,
+        "pictures": [
+          
+        ],
+        "files": [
+          
+        ],
+        "employeeRange": "全公司，张锐",
+        "lastUpdateTime": 1526010056,
+        "feedRangeDescription": "全公司，1个部门，1个同事",
+        "feedRangeTip": "全公司，张锐",
+        "feedRangeEntities": [
+          {
+            "dataID": 1043,
+            "name": "张锐",
+            "isCircle": false
+          },
+          {
+            "dataID": 999999,
+            "name": "",
+            "isCircle": true
+          }
+        ],
+        "smsRemaindCount": 0,
+        "readCount": 0,
+        "feedContent": [
+          
+        ],
+        "plan": {
+          "leaderID": 1043,
+          "leader": {
+            "gender": "M",
+            "employeeID": 1043,
+            "name": "张锐",
+            "profileImage": "N_201607_06_f5c238f7491f4013b753e142d1f4176d",
+            "department": "市场推广部, 思沛大家庭",
+            "post": "副总经理"
+          },
+          "reportContent": [
+            {
+              "type": 0,
+              "text": "日常拜访武警血管外张主任 门诊银主任 刘主任 dx\n拜访武警神内护长 确认护士节活动\n日常拜访南方神内杨教授 王老师\n确认18号会议注册名额",
+              "apiName": "",
+              "objectType": 0,
+              "feedId": 0,
+              "subType": 0
+            }
+          ],
+          "planContent": [
+            {
+              "type": 0,
+              "text": "上午拜访三院 \n下午拜访武警",
+              "apiName": "",
+              "objectType": 0,
+              "feedId": 0,
+              "subType": 0
+            }
+          ],
+          "isComment": true,
+          "rate": 4,
+          "planType": 1,
+          "canComment": false,
+          "reportContentLength": 70,
+          "planContentLength": 14,
+          "crmStartTime": 0,
+          "crmEndTime": 0,
+          "metadataApiName": "",
+          "metadataLayoutId": "",
+          "metadataVersion": "0",
+          "metadataId": "",
+          "templateId": "b33100738d874967adceb22a491caab4",
+          "templateName": "日计划",
+          "sectionType": 1,
+          "cycleType": 1,
+          "planText": "2018年05月10日 日计划，由张锐点评",
+          "reportPrompt": "今日工作总结",
+          "planPrompt": "明日工作计划",
+          "contentPrompt": "工作心得体会",
+          "crmResourceIds": [
+            
+          ]
+        },
+        "replies": [
+          {
+            "feedReplyID": 11510,
+            "feedID": 74639,
+            "employeeID": 1043,
+            "sender": {
+              "gender": "M",
+              "employeeID": 1043,
+              "name": "张锐",
+              "profileImage": "N_201607_06_f5c238f7491f4013b753e142d1f4176d",
+              "department": "市场推广部, 思沛大家庭",
+              "post": "副总经理"
+            },
+            "createTime": 1526010056,
+            "source": 303,
+            "sourceDescription": "纷享Android",
+            "replyContentLength": 8,
+            "replyContent": [
+              {
+                "type": 0,
+                "text": "四分：超过预期 ",
+                "apiName": "",
+                "objectType": 0,
+                "feedId": 0,
+                "subType": 0
+              }
+            ],
+            "isUnRead": false,
+            "pictures": [
+              
+            ],
+            "files": [
+              
+            ],
+            "operationType": 1,
+            "like": {
+              "likeCount": 0
+            },
+            "isAlreadyLike": false,
+            "isDeleted": false,
+            "deleteAble": false,
+            "roleType": 0
+          }
+        ],
+        "timingMessageRemaindsCount": 0,
+        "like": {
+          "likeCount": 0
+        },
+        "isAlreadyLike": false,
+        "reward": {
+          "rewardCount": 0
+        },
+        "isAlreadyReward": false,
+        "isFollowed": false,
+        "isArchived": false,
+        "isFeedLiked": false,
+        "feedNDFiles": [
+          
+        ],
+        "qrCode": "ZnM6Ly9mZWVkL2NvbW1vbi9pbmZvP3siZmVlZElkIjogNzQ2MzksICJzdWJUeXBlIjoyLCJlYSI6Imd6c3B5eSJ9",
+        "feedWorkNoticeRangesUnread": [
+          
+        ],
+        "feedWorkNoticeRangesReaded": [
+          
+        ],
+        "feedWorkNoticeRangesConfirmed": [
+          
+        ],
+        "woTemplates": [
+          
+        ],
+        "feedExtInfos": [
+          
+        ]
+      },
+      {
+        "feedID": 74638,
+        "employeeID": 1122,
+        "sender": {
+          "gender": "F",
+          "employeeID": 1122,
+          "name": "黄灵洁",
+          "profileImage": "N_201611_22_7e2aeebd9f864d109a776b33c87e4d99",
+          "department": "思沛大家庭, 市场推广部B组",
+          "post": "学术专员"
+        },
+        "feedContentLength": 0,
+        "source": 203,
+        "sourceDescription": "纷享iPhone",
+        "createTime": 1525964144,
+        "feedType": 2,
+        "feedTypeDescription": "日志",
+        "isPublic": true,
+        "replyCount": 1,
+        "isUnRead": false,
+        "followTime": 0,
+        "canDelete": false,
+        "canReply": true,
+        "isEncrypted": false,
+        "encryptTitle": "",
+        "importTime": "0001-01-01T08:00:00+08:00",
+        "importer": 0,
+        "subtitle": "",
+        "senderRole": 1,
+        "pictures": [
+          
+        ],
+        "files": [
+          
+        ],
+        "employeeRange": "全公司，张锐",
+        "lastUpdateTime": 1526010072,
+        "feedRangeDescription": "全公司，1个部门，1个同事",
+        "feedRangeTip": "全公司，张锐",
+        "feedRangeEntities": [
+          {
+            "dataID": 1043,
+            "name": "张锐",
+            "isCircle": false
+          },
+          {
+            "dataID": 999999,
+            "name": "",
+            "isCircle": true
+          }
+        ],
+        "smsRemaindCount": 0,
+        "readCount": 0,
+        "feedContent": [
+          
+        ],
+        "plan": {
+          "leaderID": 1043,
+          "leader": {
+            "gender": "M",
+            "employeeID": 1043,
+            "name": "张锐",
+            "profileImage": "N_201607_06_f5c238f7491f4013b753e142d1f4176d",
+            "department": "市场推广部, 思沛大家庭",
+            "post": "副总经理"
+          },
+          "reportContent": [
+            {
+              "type": 0,
+              "text": "1.拜访答谢了洪桥街的黄主任，李主任，吕主任；2.拜访感谢了省中的何主任，吕主任，王主任；3.确认好12号省中妇科会议接送专家事宜。",
+              "apiName": "",
+              "objectType": 0,
+              "feedId": 0,
+              "subType": 0
+            }
+          ],
+          "planContent": [
+            {
+              "type": 0,
+              "text": "1.答谢客户；2.接送省中妇科会议的专家。",
+              "apiName": "",
+              "objectType": 0,
+              "feedId": 0,
+              "subType": 0
+            }
+          ],
+          "isComment": true,
+          "rate": 3,
+          "planType": 1,
+          "canComment": false,
+          "reportContentLength": 66,
+          "planContentLength": 21,
+          "crmStartTime": 0,
+          "crmEndTime": 0,
+          "metadataApiName": "",
+          "metadataLayoutId": "",
+          "metadataVersion": "0",
+          "metadataId": "",
+          "templateId": "b33100738d874967adceb22a491caab4",
+          "templateName": "日计划",
+          "sectionType": 1,
+          "cycleType": 1,
+          "planText": "2018年05月10日 日计划，由张锐点评",
+          "reportPrompt": "今日工作总结",
+          "planPrompt": "明日工作计划",
+          "contentPrompt": "工作心得体会",
+          "crmResourceIds": [
+            
+          ]
+        },
+        "replies": [
+          {
+            "feedReplyID": 11511,
+            "feedID": 74638,
+            "employeeID": 1043,
+            "sender": {
+              "gender": "M",
+              "employeeID": 1043,
+              "name": "张锐",
+              "profileImage": "N_201607_06_f5c238f7491f4013b753e142d1f4176d",
+              "department": "市场推广部, 思沛大家庭",
+              "post": "副总经理"
+            },
+            "createTime": 1526010072,
+            "source": 303,
+            "sourceDescription": "纷享Android",
+            "replyContentLength": 8,
+            "replyContent": [
+              {
+                "type": 0,
+                "text": "三分：符合要求 ",
+                "apiName": "",
+                "objectType": 0,
+                "feedId": 0,
+                "subType": 0
+              }
+            ],
+            "isUnRead": false,
+            "pictures": [
+              
+            ],
+            "files": [
+              
+            ],
+            "operationType": 1,
+            "like": {
+              "likeCount": 0
+            },
+            "isAlreadyLike": false,
+            "isDeleted": false,
+            "deleteAble": false,
+            "roleType": 0
+          }
+        ],
+        "timingMessageRemaindsCount": 0,
+        "like": {
+          "likeCount": 0
+        },
+        "isAlreadyLike": false,
+        "reward": {
+          "rewardCount": 0
+        },
+        "isAlreadyReward": false,
+        "isFollowed": false,
+        "isArchived": false,
+        "isFeedLiked": false,
+        "feedNDFiles": [
+          
+        ],
+        "qrCode": "ZnM6Ly9mZWVkL2NvbW1vbi9pbmZvP3siZmVlZElkIjogNzQ2MzgsICJzdWJUeXBlIjoyLCJlYSI6Imd6c3B5eSJ9",
+        "feedWorkNoticeRangesUnread": [
+          
+        ],
+        "feedWorkNoticeRangesReaded": [
+          
+        ],
+        "feedWorkNoticeRangesConfirmed": [
+          
+        ],
+        "woTemplates": [
+          
+        ],
+        "feedExtInfos": [
+          
+        ]
+      },
+      {
+        "feedID": 74635,
+        "employeeID": 1159,
+        "sender": {
+          "gender": "F",
+          "employeeID": 1159,
+          "name": "梁嘉乐",
+          "profileImage": "N_201710_18_2026b49c100c4f3e8e1762d115195c48",
+          "department": "思沛大家庭, 市场推广部A组",
+          "post": "学术代表"
+        },
+        "feedContentLength": 0,
+        "source": 203,
+        "sourceDescription": "纷享iPhone",
+        "createTime": 1525961348,
+        "feedType": 2,
+        "feedTypeDescription": "日志",
+        "isPublic": true,
+        "replyCount": 0,
+        "isUnRead": false,
+        "followTime": 0,
+        "canDelete": false,
+        "canReply": true,
+        "isEncrypted": false,
+        "encryptTitle": "",
+        "importTime": "0001-01-01T08:00:00+08:00",
+        "importer": 0,
+        "subtitle": "",
+        "senderRole": 1,
+        "pictures": [
+          
+        ],
+        "files": [
+          
+        ],
+        "employeeRange": "全公司，李珍",
+        "lastUpdateTime": 1525961348,
+        "feedRangeDescription": "全公司，1个部门，1个同事",
+        "feedRangeTip": "全公司，李珍",
+        "feedRangeEntities": [
+          {
+            "dataID": 1007,
+            "name": "李珍",
+            "isCircle": false
+          },
+          {
+            "dataID": 999999,
+            "name": "",
+            "isCircle": true
+          }
+        ],
+        "smsRemaindCount": 0,
+        "readCount": 0,
+        "feedContent": [
+          
+        ],
+        "plan": {
+          "leaderID": 1007,
+          "leader": {
+            "gender": "F",
+            "employeeID": 1007,
+            "name": "李珍",
+            "profileImage": "N_201603_23_dc9a9b91c9d440b3b9041263d20edbe4",
+            "department": "思沛大家庭, 市场推广部A组",
+            "post": "市场推广部A组经理"
+          },
+          "reportContent": [
+            {
+              "type": 0,
+              "text": "佛二：\n全科-龚媛：答谢。对会议挺感兴趣，要到明天才能确认是否参与。\n血液-上官辉：答谢。\n中医-陈伟强，华佗推广。\n神内-廖龙光，没问题的话明天会参加会议。\n心内-易月蝉，答谢。\n          徐宁，答谢\n          严俊儒，答谢，明天就要外出了下次再参加。\n\n南海人民\n神内：杨晓洁，感谢，已经半袋半袋服用，有病人反馈燥热，还行！\n心内：杨玲，前几个月开始用ndk因为老断货没信心。今晚推荐ht，很久以前用过反应不好，这次建议半袋起服用试一下。\n中医科：宁智飞，投诉华佗老是断货。这边等厂家改配送证明会直接转广州医院配送。\n\n佛中\n神内：霍绮雯，产品推广。会议下次再参加\n            徐丽红，会议参加。\n心内：罗子幸，感谢，明天参加会议。\n           王文会，感谢。\n内分泌：王甫能，感谢。\n心理：孟咏铮，感谢。\n\n",
+              "apiName": "",
+              "objectType": 0,
+              "feedId": 0,
+              "subType": 0
+            }
+          ],
+          "planContent": [
+            {
+              "type": 0,
+              "text": "佛二，佛中，\n把沙龙会的事情提前准备好",
+              "apiName": "",
+              "objectType": 0,
+              "feedId": 0,
+              "subType": 0
+            }
+          ],
+          "isComment": false,
+          "rate": 0,
+          "planType": 1,
+          "canComment": false,
+          "reportContentLength": 378,
+          "planContentLength": 19,
+          "crmStartTime": 0,
+          "crmEndTime": 0,
+          "metadataApiName": "",
+          "metadataLayoutId": "",
+          "metadataVersion": "0",
+          "metadataId": "",
+          "templateId": "b33100738d874967adceb22a491caab4",
+          "templateName": "日计划",
+          "sectionType": 1,
+          "cycleType": 1,
+          "planText": "2018年05月10日 日计划，由李珍点评",
+          "reportPrompt": "今日工作总结",
+          "planPrompt": "明日工作计划",
+          "contentPrompt": "工作心得体会",
+          "crmResourceIds": [
+            
+          ]
+        },
+        "replies": [
+          
+        ],
+        "timingMessageRemaindsCount": 0,
+        "like": {
+          "likeCount": 0
+        },
+        "isAlreadyLike": false,
+        "reward": {
+          "rewardCount": 0
+        },
+        "isAlreadyReward": false,
+        "isFollowed": false,
+        "isArchived": false,
+        "isFeedLiked": false,
+        "feedNDFiles": [
+          
+        ],
+        "qrCode": "ZnM6Ly9mZWVkL2NvbW1vbi9pbmZvP3siZmVlZElkIjogNzQ2MzUsICJzdWJUeXBlIjoyLCJlYSI6Imd6c3B5eSJ9",
+        "feedWorkNoticeRangesUnread": [
+          
+        ],
+        "feedWorkNoticeRangesReaded": [
+          
+        ],
+        "feedWorkNoticeRangesConfirmed": [
+          
+        ],
+        "woTemplates": [
+          
+        ],
+        "feedExtInfos": [
+          
+        ]
+      },
+      {
+        "feedID": 74629,
+        "employeeID": 1176,
+        "sender": {
+          "gender": "M",
+          "employeeID": 1176,
+          "name": "麦浩辉",
+          "profileImage": "",
+          "department": "思沛大家庭, 市场推广部A组",
+          "post": "学术专员"
+        },
+        "feedContentLength": 0,
+        "source": 203,
+        "sourceDescription": "纷享iPhone",
+        "createTime": 1525958920,
+        "feedType": 2,
+        "feedTypeDescription": "日志",
+        "isPublic": true,
+        "replyCount": 0,
+        "isUnRead": false,
+        "followTime": 0,
+        "canDelete": false,
+        "canReply": true,
+        "isEncrypted": false,
+        "encryptTitle": "",
+        "importTime": "0001-01-01T08:00:00+08:00",
+        "importer": 0,
+        "subtitle": "",
+        "senderRole": 1,
+        "pictures": [
+          
+        ],
+        "files": [
+          
+        ],
+        "employeeRange": "全公司，李珍",
+        "lastUpdateTime": 1525958920,
+        "feedRangeDescription": "全公司，1个部门，1个同事",
+        "feedRangeTip": "全公司，李珍",
+        "feedRangeEntities": [
+          {
+            "dataID": 1007,
+            "name": "李珍",
+            "isCircle": false
+          },
+          {
+            "dataID": 999999,
+            "name": "",
+            "isCircle": true
+          }
+        ],
+        "smsRemaindCount": 0,
+        "readCount": 0,
+        "feedContent": [
+          
+        ],
+        "plan": {
+          "leaderID": 1007,
+          "leader": {
+            "gender": "F",
+            "employeeID": 1007,
+            "name": "李珍",
+            "profileImage": "N_201603_23_dc9a9b91c9d440b3b9041263d20edbe4",
+            "department": "思沛大家庭, 市场推广部A组",
+            "post": "市场推广部A组经理"
+          },
+          "reportContent": [
+            {
+              "type": 0,
+              "text": "1.红会、新港、怡凤交接",
+              "apiName": "",
+              "objectType": 0,
+              "feedId": 0,
+              "subType": 0
+            }
+          ],
+          "planContent": [
+            {
+              "type": 0,
+              "text": "1.省医交接",
+              "apiName": "",
+              "objectType": 0,
+              "feedId": 0,
+              "subType": 0
+            }
+          ],
+          "isComment": false,
+          "rate": 0,
+          "planType": 1,
+          "canComment": false,
+          "reportContentLength": 12,
+          "planContentLength": 6,
+          "crmStartTime": 0,
+          "crmEndTime": 0,
+          "metadataApiName": "",
+          "metadataLayoutId": "",
+          "metadataVersion": "0",
+          "metadataId": "",
+          "templateId": "b33100738d874967adceb22a491caab4",
+          "templateName": "日计划",
+          "sectionType": 1,
+          "cycleType": 1,
+          "planText": "2018年05月10日 日计划，由李珍点评",
+          "reportPrompt": "今日工作总结",
+          "planPrompt": "明日工作计划",
+          "contentPrompt": "工作心得体会",
+          "crmResourceIds": [
+            
+          ]
+        },
+        "replies": [
+          
+        ],
+        "timingMessageRemaindsCount": 0,
+        "like": {
+          "likeCount": 0
+        },
+        "isAlreadyLike": false,
+        "reward": {
+          "rewardCount": 0
+        },
+        "isAlreadyReward": false,
+        "isFollowed": false,
+        "isArchived": false,
+        "isFeedLiked": false,
+        "feedNDFiles": [
+          
+        ],
+        "qrCode": "ZnM6Ly9mZWVkL2NvbW1vbi9pbmZvP3siZmVlZElkIjogNzQ2MjksICJzdWJUeXBlIjoyLCJlYSI6Imd6c3B5eSJ9",
+        "feedWorkNoticeRangesUnread": [
+          
+        ],
+        "feedWorkNoticeRangesReaded": [
+          
+        ],
+        "feedWorkNoticeRangesConfirmed": [
+          
+        ],
+        "woTemplates": [
+          
+        ],
+        "feedExtInfos": [
+          
+        ]
+      },
+      {
+        "feedID": 74628,
+        "employeeID": 1011,
+        "sender": {
+          "gender": "M",
+          "employeeID": 1011,
+          "name": "于海洋",
+          "profileImage": "N_201511_24_6c26f92309bf46f3ae0f70ae4a0fc2b7",
+          "department": "思沛大家庭, 市场推广部A组",
+          "post": "学术专员"
+        },
+        "feedContentLength": 0,
+        "source": 303,
+        "sourceDescription": "纷享Android",
+        "createTime": 1525958780,
+        "feedType": 2,
+        "feedTypeDescription": "日志",
+        "isPublic": true,
+        "replyCount": 0,
+        "isUnRead": false,
+        "followTime": 0,
+        "canDelete": false,
+        "canReply": true,
+        "isEncrypted": false,
+        "encryptTitle": "",
+        "importTime": "0001-01-01T08:00:00+08:00",
+        "importer": 0,
+        "subtitle": "",
+        "senderRole": 1,
+        "pictures": [
+          
+        ],
+        "files": [
+          
+        ],
+        "employeeRange": "全公司，李珍",
+        "lastUpdateTime": 1525958780,
+        "feedRangeDescription": "全公司，1个部门，1个同事",
+        "feedRangeTip": "全公司，李珍",
+        "feedRangeEntities": [
+          {
+            "dataID": 1007,
+            "name": "李珍",
+            "isCircle": false
+          },
+          {
+            "dataID": 999999,
+            "name": "",
+            "isCircle": true
+          }
+        ],
+        "smsRemaindCount": 0,
+        "readCount": 0,
+        "feedContent": [
+          
+        ],
+        "plan": {
+          "leaderID": 1007,
+          "leader": {
+            "gender": "F",
+            "employeeID": 1007,
+            "name": "李珍",
+            "profileImage": "N_201603_23_dc9a9b91c9d440b3b9041263d20edbe4",
+            "department": "思沛大家庭, 市场推广部A组",
+            "post": "市场推广部A组经理"
+          },
+          "reportContent": [
+            {
+              "type": 0,
+              "text": "拜访市十二吴，兰邀请神农草堂活动，吴最后因家人不去不参加了。拜访刘卫彬给组里带工作餐。答谢马虹，靳亚飞，赖光华，麦伟颐，普通拜罗劲华。拜访李玲提醒使用华佗。提醒肖颂华使用脑心清，约明天拜访袁沃亮。",
+              "apiName": "",
+              "objectType": 0,
+              "feedId": 0,
+              "subType": 0
+            }
+          ],
+          "planContent": [
+            {
+              "type": 0,
+              "text": "答谢中二客户。",
+              "apiName": "",
+              "objectType": 0,
+              "feedId": 0,
+              "subType": 0
+            }
+          ],
+          "isComment": false,
+          "rate": 0,
+          "planType": 1,
+          "canComment": false,
+          "reportContentLength": 98,
+          "planContentLength": 7,
+          "crmStartTime": 0,
+          "crmEndTime": 0,
+          "metadataApiName": "",
+          "metadataLayoutId": "",
+          "metadataVersion": "0",
+          "metadataId": "",
+          "templateId": "b33100738d874967adceb22a491caab4",
+          "templateName": "日计划",
+          "sectionType": 1,
+          "cycleType": 1,
+          "planText": "2018年05月10日 日计划，由李珍点评",
+          "reportPrompt": "今日工作总结",
+          "planPrompt": "明日工作计划",
+          "contentPrompt": "工作心得体会",
+          "crmResourceIds": [
+            
+          ]
+        },
+        "replies": [
+          
+        ],
+        "timingMessageRemaindsCount": 0,
+        "like": {
+          "likeCount": 0
+        },
+        "isAlreadyLike": false,
+        "reward": {
+          "rewardCount": 0
+        },
+        "isAlreadyReward": false,
+        "isFollowed": false,
+        "isArchived": false,
+        "isFeedLiked": false,
+        "feedNDFiles": [
+          
+        ],
+        "qrCode": "ZnM6Ly9mZWVkL2NvbW1vbi9pbmZvP3siZmVlZElkIjogNzQ2MjgsICJzdWJUeXBlIjoyLCJlYSI6Imd6c3B5eSJ9",
+        "feedWorkNoticeRangesUnread": [
+          
+        ],
+        "feedWorkNoticeRangesReaded": [
+          
+        ],
+        "feedWorkNoticeRangesConfirmed": [
+          
+        ],
+        "woTemplates": [
+          
+        ],
+        "feedExtInfos": [
+          
+        ]
+      },
+      {
+        "feedID": 74620,
+        "employeeID": 1031,
+        "sender": {
+          "gender": "M",
+          "employeeID": 1031,
+          "name": "方泽霖",
+          "profileImage": "N_201511_24_97d1f75262cf40c2815529570b2c2dce",
+          "department": "思沛大家庭, 市场推广部A组",
+          "post": "学术专员"
+        },
+        "feedContentLength": 0,
+        "source": 303,
+        "sourceDescription": "纷享Android",
+        "createTime": 1525951028,
+        "feedType": 2,
+        "feedTypeDescription": "日志",
+        "isPublic": false,
+        "replyCount": 0,
+        "isUnRead": false,
+        "followTime": 0,
+        "canDelete": false,
+        "canReply": true,
+        "isEncrypted": false,
+        "encryptTitle": "",
+        "importTime": "0001-01-01T08:00:00+08:00",
+        "importer": 0,
+        "subtitle": "",
+        "senderRole": 1,
+        "pictures": [
+          
+        ],
+        "files": [
+          
+        ],
+        "employeeRange": "2个部门，1个同事",
+        "lastUpdateTime": 1525951028,
+        "feedRangeDescription": "2个部门，1个同事",
+        "feedRangeTip": "李珍，思沛大家庭，市场推广部A组",
+        "feedRangeEntities": [
+          {
+            "dataID": 1007,
+            "name": "李珍",
+            "isCircle": false
+          },
+          {
+            "dataID": 1015,
+            "name": "思沛大家庭",
+            "isCircle": true
+          },
+          {
+            "dataID": 1030,
+            "name": "市场推广部A组",
+            "isCircle": true
+          }
+        ],
+        "smsRemaindCount": 0,
+        "readCount": 0,
+        "feedContent": [
+          
+        ],
+        "plan": {
+          "leaderID": 1007,
+          "leader": {
+            "gender": "F",
+            "employeeID": 1007,
+            "name": "李珍",
+            "profileImage": "N_201603_23_dc9a9b91c9d440b3b9041263d20edbe4",
+            "department": "思沛大家庭, 市场推广部A组",
+            "post": "市场推广部A组经理"
+          },
+          "reportContent": [
+            {
+              "type": 0,
+              "text": "1、日常拜访周主任、许主任、李主任、钱主任、儿科李主任、邓主任，维护客情工作；\n2、拜访珠江师医生、陈医生答谢客户；\n3、邀请刁主任、何主任参加12号活动，刁主任要上急诊班，何主任有事参加不了。",
+              "apiName": "",
+              "objectType": 0,
+              "feedId": 0,
+              "subType": 0
+            }
+          ],
+          "planContent": [
+            {
+              "type": 0,
+              "text": "",
+              "apiName": "",
+              "objectType": 0,
+              "feedId": 0,
+              "subType": 0
+            }
+          ],
+          "isComment": false,
+          "rate": 0,
+          "planType": 1,
+          "canComment": false,
+          "reportContentLength": 97,
+          "planContentLength": 0,
+          "crmStartTime": 0,
+          "crmEndTime": 0,
+          "metadataApiName": "",
+          "metadataLayoutId": "",
+          "metadataVersion": "0",
+          "metadataId": "",
+          "templateId": "b33100738d874967adceb22a491caab4",
+          "templateName": "日计划",
+          "sectionType": 1,
+          "cycleType": 1,
+          "planText": "2018年05月10日 日计划，由李珍点评",
+          "reportPrompt": "今日工作总结",
+          "planPrompt": "明日工作计划",
+          "contentPrompt": "工作心得体会",
+          "crmResourceIds": [
+            
+          ]
+        },
+        "replies": [
+          
+        ],
+        "timingMessageRemaindsCount": 0,
+        "like": {
+          "likeCount": 0
+        },
+        "isAlreadyLike": false,
+        "reward": {
+          "rewardCount": 0
+        },
+        "isAlreadyReward": false,
+        "isFollowed": false,
+        "isArchived": false,
+        "isFeedLiked": false,
+        "feedNDFiles": [
+          
+        ],
+        "qrCode": "ZnM6Ly9mZWVkL2NvbW1vbi9pbmZvP3siZmVlZElkIjogNzQ2MjAsICJzdWJUeXBlIjoyLCJlYSI6Imd6c3B5eSJ9",
+        "feedWorkNoticeRangesUnread": [
+          
+        ],
+        "feedWorkNoticeRangesReaded": [
+          
+        ],
+        "feedWorkNoticeRangesConfirmed": [
+          
+        ],
+        "woTemplates": [
+          
+        ],
+        "feedExtInfos": [
+          
+        ]
+      },
+      {
+        "feedID": 74617,
+        "employeeID": 1025,
+        "sender": {
+          "gender": "M",
+          "employeeID": 1025,
+          "name": "吴华东",
+          "profileImage": "N_201511_23_79f80e647ca94ebcb8b31e214cc3b6eb",
+          "department": "思沛大家庭, 市场推广部A组",
+          "post": "学术专员"
+        },
+        "feedContentLength": 0,
+        "source": 203,
+        "sourceDescription": "纷享iPhone",
+        "createTime": 1525948901,
+        "feedType": 2,
+        "feedTypeDescription": "日志",
+        "isPublic": false,
+        "replyCount": 0,
+        "isUnRead": false,
+        "followTime": 0,
+        "canDelete": false,
+        "canReply": true,
+        "isEncrypted": false,
+        "encryptTitle": "",
+        "importTime": "0001-01-01T08:00:00+08:00",
+        "importer": 0,
+        "subtitle": "",
+        "senderRole": 1,
+        "pictures": [
+          
+        ],
+        "files": [
+          
+        ],
+        "employeeRange": "2个部门，1个同事",
+        "lastUpdateTime": 1525948901,
+        "feedRangeDescription": "2个部门，1个同事",
+        "feedRangeTip": "李珍，思沛大家庭，市场推广部A组",
+        "feedRangeEntities": [
+          {
+            "dataID": 1007,
+            "name": "李珍",
+            "isCircle": false
+          },
+          {
+            "dataID": 1015,
+            "name": "思沛大家庭",
+            "isCircle": true
+          },
+          {
+            "dataID": 1030,
+            "name": "市场推广部A组",
+            "isCircle": true
+          }
+        ],
+        "smsRemaindCount": 0,
+        "readCount": 0,
+        "feedContent": [
+          
+        ],
+        "plan": {
+          "leaderID": 1007,
+          "leader": {
+            "gender": "F",
+            "employeeID": 1007,
+            "name": "李珍",
+            "profileImage": "N_201603_23_dc9a9b91c9d440b3b9041263d20edbe4",
+            "department": "思沛大家庭, 市场推广部A组",
+            "post": "市场推广部A组经理"
+          },
+          "reportContent": [
+            {
+              "type": 0,
+              "text": "今日主要工作，1拜访广一吴卓华，约明天中午过片子2拜访东沙朱主任，维护答谢，邀请参加神农草堂活动，其说周六刚好值班，3拜访杨义芳，维护答谢，邀请参加神农草堂活动，其说不去了，周六有事，4拜访鹤园刘主任，维护答谢，邀请参加神农草堂活动，其说去过了，不去了，5拜访冲口林雨停，谈鼻敏灵，应该很快就能用了，6拜访西村王艳辉，维护答谢，邀请参加神农草堂活动，其说可以参加。",
+              "apiName": "",
+              "objectType": 0,
+              "feedId": 0,
+              "subType": 0
+            }
+          ],
+          "planContent": [
+            {
+              "type": 0,
+              "text": "明天主要答谢广一客户，跟吴卓华过片子。",
+              "apiName": "",
+              "objectType": 0,
+              "feedId": 0,
+              "subType": 0
+            }
+          ],
+          "isComment": false,
+          "rate": 0,
+          "planType": 1,
+          "canComment": false,
+          "reportContentLength": 182,
+          "planContentLength": 19,
+          "crmStartTime": 0,
+          "crmEndTime": 0,
+          "metadataApiName": "",
+          "metadataLayoutId": "",
+          "metadataVersion": "0",
+          "metadataId": "",
+          "templateId": "b33100738d874967adceb22a491caab4",
+          "templateName": "日计划",
+          "sectionType": 1,
+          "cycleType": 1,
+          "planText": "2018年05月10日 日计划，由李珍点评",
+          "reportPrompt": "今日工作总结",
+          "planPrompt": "明日工作计划",
+          "contentPrompt": "工作心得体会",
+          "crmResourceIds": [
+            
+          ]
+        },
+        "replies": [
+          
+        ],
+        "timingMessageRemaindsCount": 0,
+        "like": {
+          "likeCount": 0
+        },
+        "isAlreadyLike": false,
+        "reward": {
+          "rewardCount": 0
+        },
+        "isAlreadyReward": false,
+        "isFollowed": false,
+        "isArchived": false,
+        "isFeedLiked": false,
+        "feedNDFiles": [
+          
+        ],
+        "qrCode": "ZnM6Ly9mZWVkL2NvbW1vbi9pbmZvP3siZmVlZElkIjogNzQ2MTcsICJzdWJUeXBlIjoyLCJlYSI6Imd6c3B5eSJ9",
+        "feedWorkNoticeRangesUnread": [
+          
+        ],
+        "feedWorkNoticeRangesReaded": [
+          
+        ],
+        "feedWorkNoticeRangesConfirmed": [
+          
+        ],
+        "woTemplates": [
+          
+        ],
+        "feedExtInfos": [
+          
+        ]
+      },
+      {
+        "feedID": 74495,
+        "employeeID": 1168,
+        "sender": {
+          "gender": "F",
+          "employeeID": 1168,
+          "name": "郭佩佩",
+          "profileImage": "N_201712_26_04b573fb341346c0b6b557d1640b8a60",
+          "department": "思沛大家庭, 市场推广部B组",
+          "post": "学术专员"
+        },
+        "feedContentLength": 0,
+        "source": 203,
+        "sourceDescription": "纷享iPhone",
+        "createTime": 1525880521,
+        "feedType": 2,
+        "feedTypeDescription": "日志",
+        "isPublic": true,
+        "replyCount": 1,
+        "isUnRead": false,
+        "followTime": 0,
+        "canDelete": false,
+        "canReply": true,
+        "isEncrypted": false,
+        "encryptTitle": "",
+        "importTime": "0001-01-01T08:00:00+08:00",
+        "importer": 0,
+        "subtitle": "",
+        "senderRole": 1,
+        "pictures": [
+          
+        ],
+        "files": [
+          
+        ],
+        "employeeRange": "全公司，张锐",
+        "lastUpdateTime": 1526010111,
+        "feedRangeDescription": "全公司，1个部门，1个同事",
+        "feedRangeTip": "全公司，张锐",
+        "feedRangeEntities": [
+          {
+            "dataID": 1043,
+            "name": "张锐",
+            "isCircle": false
+          },
+          {
+            "dataID": 999999,
+            "name": "",
+            "isCircle": true
+          }
+        ],
+        "smsRemaindCount": 0,
+        "readCount": 0,
+        "feedContent": [
+          
+        ],
+        "plan": {
+          "leaderID": 1043,
+          "leader": {
+            "gender": "M",
+            "employeeID": 1043,
+            "name": "张锐",
+            "profileImage": "N_201607_06_f5c238f7491f4013b753e142d1f4176d",
+            "department": "市场推广部, 思沛大家庭",
+            "post": "副总经理"
+          },
+          "reportContent": [
+            {
+              "type": 0,
+              "text": "日常拜访南方神内周教授 王老师 dx\n拜访南方中医科潘主任 促进nxq处方 目前有1.2个病人处方 还不是太信任\n厂家协防南方神内潘主任 未能见上\n家访殷教授 郑主任 日常维护dx",
+              "apiName": "",
+              "objectType": 0,
+              "feedId": 0,
+              "subType": 0
+            }
+          ],
+          "planContent": [
+            {
+              "type": 0,
+              "text": "上午拜访武警 确认护士节会议事项 以及完成4月劳务\n下午拜访南方icu 之后妇幼",
+              "apiName": "",
+              "objectType": 0,
+              "feedId": 0,
+              "subType": 0
+            }
+          ],
+          "isComment": true,
+          "rate": 4,
+          "planType": 1,
+          "canComment": false,
+          "reportContentLength": 90,
+          "planContentLength": 40,
+          "crmStartTime": 0,
+          "crmEndTime": 0,
+          "metadataApiName": "",
+          "metadataLayoutId": "",
+          "metadataVersion": "0",
+          "metadataId": "",
+          "templateId": "b33100738d874967adceb22a491caab4",
+          "templateName": "日计划",
+          "sectionType": 1,
+          "cycleType": 1,
+          "planText": "2018年05月09日 日计划，由张锐点评",
+          "reportPrompt": "今日工作总结",
+          "planPrompt": "明日工作计划",
+          "contentPrompt": "工作心得体会",
+          "crmResourceIds": [
+            
+          ]
+        },
+        "replies": [
+          {
+            "feedReplyID": 11513,
+            "feedID": 74495,
+            "employeeID": 1043,
+            "sender": {
+              "gender": "M",
+              "employeeID": 1043,
+              "name": "张锐",
+              "profileImage": "N_201607_06_f5c238f7491f4013b753e142d1f4176d",
+              "department": "市场推广部, 思沛大家庭",
+              "post": "副总经理"
+            },
+            "createTime": 1526010111,
+            "source": 303,
+            "sourceDescription": "纷享Android",
+            "replyContentLength": 8,
+            "replyContent": [
+              {
+                "type": 0,
+                "text": "四分：超过预期 ",
+                "apiName": "",
+                "objectType": 0,
+                "feedId": 0,
+                "subType": 0
+              }
+            ],
+            "isUnRead": false,
+            "pictures": [
+              
+            ],
+            "files": [
+              
+            ],
+            "operationType": 1,
+            "like": {
+              "likeCount": 0
+            },
+            "isAlreadyLike": false,
+            "isDeleted": false,
+            "deleteAble": false,
+            "roleType": 0
+          }
+        ],
+        "timingMessageRemaindsCount": 0,
+        "like": {
+          "likeCount": 0
+        },
+        "isAlreadyLike": false,
+        "reward": {
+          "rewardCount": 0
+        },
+        "isAlreadyReward": false,
+        "isFollowed": false,
+        "isArchived": false,
+        "isFeedLiked": false,
+        "feedNDFiles": [
+          
+        ],
+        "qrCode": "ZnM6Ly9mZWVkL2NvbW1vbi9pbmZvP3siZmVlZElkIjogNzQ0OTUsICJzdWJUeXBlIjoyLCJlYSI6Imd6c3B5eSJ9",
+        "feedWorkNoticeRangesUnread": [
+          
+        ],
+        "feedWorkNoticeRangesReaded": [
+          
+        ],
+        "feedWorkNoticeRangesConfirmed": [
+          
+        ],
+        "woTemplates": [
+          
+        ],
+        "feedExtInfos": [
+          
+        ]
+      },
+      {
+        "feedID": 74492,
+        "employeeID": 1159,
+        "sender": {
+          "gender": "F",
+          "employeeID": 1159,
+          "name": "梁嘉乐",
+          "profileImage": "N_201710_18_2026b49c100c4f3e8e1762d115195c48",
+          "department": "思沛大家庭, 市场推广部A组",
+          "post": "学术代表"
+        },
+        "feedContentLength": 0,
+        "source": 203,
+        "sourceDescription": "纷享iPhone",
+        "createTime": 1525875441,
+        "feedType": 2,
+        "feedTypeDescription": "日志",
+        "isPublic": true,
+        "replyCount": 0,
+        "isUnRead": false,
+        "followTime": 0,
+        "canDelete": false,
+        "canReply": true,
+        "isEncrypted": false,
+        "encryptTitle": "",
+        "importTime": "0001-01-01T08:00:00+08:00",
+        "importer": 0,
+        "subtitle": "",
+        "senderRole": 1,
+        "pictures": [
+          
+        ],
+        "files": [
+          
+        ],
+        "employeeRange": "全公司，李珍",
+        "lastUpdateTime": 1525875441,
+        "feedRangeDescription": "全公司，1个部门，1个同事",
+        "feedRangeTip": "全公司，李珍",
+        "feedRangeEntities": [
+          {
+            "dataID": 1007,
+            "name": "李珍",
+            "isCircle": false
+          },
+          {
+            "dataID": 999999,
+            "name": "",
+            "isCircle": true
+          }
+        ],
+        "smsRemaindCount": 0,
+        "readCount": 0,
+        "feedContent": [
+          
+        ],
+        "plan": {
+          "leaderID": 1007,
+          "leader": {
+            "gender": "F",
+            "employeeID": 1007,
+            "name": "李珍",
+            "profileImage": "N_201603_23_dc9a9b91c9d440b3b9041263d20edbe4",
+            "department": "思沛大家庭, 市场推广部A组",
+            "post": "市场推广部A组经理"
+          },
+          "reportContent": [
+            {
+              "type": 0,
+              "text": "茶滘-李娟，邀请神龙草堂活动，等确定回复。\n东漖-廖银亮，邀请神龙草堂活动，跟进进药事宜，目前还是没开会。\n佛一-\n康复科：黄文清，沙龙会那天要值班，第二次见面，对产品有点熟悉，日后加强推广。\n神经内科：\n袁大华：落实是否参加沙龙会，还是未能确定。\n佛二\n神内-\n区腾飞：答谢，表示会多多支持\n李艳秋：答谢。\n心内-\n朱静，日常拜访。\n范海燕，答谢。",
+              "apiName": "",
+              "objectType": 0,
+              "feedId": 0,
+              "subType": 0
+            }
+          ],
+          "planContent": [
+            {
+              "type": 0,
+              "text": "佛二，佛一，佛中 ，南海人民，确认神龙草堂和沙龙会的参加名单。",
+              "apiName": "",
+              "objectType": 0,
+              "feedId": 0,
+              "subType": 0
+            }
+          ],
+          "isComment": false,
+          "rate": 0,
+          "planType": 1,
+          "canComment": false,
+          "reportContentLength": 175,
+          "planContentLength": 31,
+          "crmStartTime": 0,
+          "crmEndTime": 0,
+          "metadataApiName": "",
+          "metadataLayoutId": "",
+          "metadataVersion": "0",
+          "metadataId": "",
+          "templateId": "b33100738d874967adceb22a491caab4",
+          "templateName": "日计划",
+          "sectionType": 1,
+          "cycleType": 1,
+          "planText": "2018年05月09日 日计划，由李珍点评",
+          "reportPrompt": "今日工作总结",
+          "planPrompt": "明日工作计划",
+          "contentPrompt": "工作心得体会",
+          "crmResourceIds": [
+            
+          ]
+        },
+        "replies": [
+          
+        ],
+        "timingMessageRemaindsCount": 0,
+        "like": {
+          "likeCount": 1,
+          "likeEmployees": [
+            {
+              "likeTime": 0,
+              "employeeID": 1007,
+              "name": "李珍",
+              "profileImage": "N_201603_23_dc9a9b91c9d440b3b9041263d20edbe4"
+            }
+          ]
+        },
+        "isAlreadyLike": false,
+        "reward": {
+          "rewardCount": 0
+        },
+        "isAlreadyReward": false,
+        "isFollowed": false,
+        "isArchived": false,
+        "isFeedLiked": false,
+        "feedNDFiles": [
+          
+        ],
+        "qrCode": "ZnM6Ly9mZWVkL2NvbW1vbi9pbmZvP3siZmVlZElkIjogNzQ0OTIsICJzdWJUeXBlIjoyLCJlYSI6Imd6c3B5eSJ9",
+        "feedWorkNoticeRangesUnread": [
+          
+        ],
+        "feedWorkNoticeRangesReaded": [
+          
+        ],
+        "feedWorkNoticeRangesConfirmed": [
+          
+        ],
+        "woTemplates": [
+          
+        ],
+        "feedExtInfos": [
+          
+        ]
+      },
+      {
+        "feedID": 74485,
+        "employeeID": 1122,
+        "sender": {
+          "gender": "F",
+          "employeeID": 1122,
+          "name": "黄灵洁",
+          "profileImage": "N_201611_22_7e2aeebd9f864d109a776b33c87e4d99",
+          "department": "思沛大家庭, 市场推广部B组",
+          "post": "学术专员"
+        },
+        "feedContentLength": 0,
+        "source": 203,
+        "sourceDescription": "纷享iPhone",
+        "createTime": 1525872817,
+        "feedType": 2,
+        "feedTypeDescription": "日志",
+        "isPublic": true,
+        "replyCount": 0,
+        "isUnRead": false,
+        "followTime": 0,
+        "canDelete": false,
+        "canReply": true,
+        "isEncrypted": false,
+        "encryptTitle": "",
+        "importTime": "0001-01-01T08:00:00+08:00",
+        "importer": 0,
+        "subtitle": "",
+        "senderRole": 1,
+        "pictures": [
+          
+        ],
+        "files": [
+          
+        ],
+        "employeeRange": "全公司，张锐",
+        "lastUpdateTime": 1525872817,
+        "feedRangeDescription": "全公司，1个部门，1个同事",
+        "feedRangeTip": "全公司，张锐",
+        "feedRangeEntities": [
+          {
+            "dataID": 1043,
+            "name": "张锐",
+            "isCircle": false
+          },
+          {
+            "dataID": 999999,
+            "name": "",
+            "isCircle": true
+          }
+        ],
+        "smsRemaindCount": 0,
+        "readCount": 0,
+        "feedContent": [
+          
+        ],
+        "plan": {
+          "leaderID": 1043,
+          "leader": {
+            "gender": "M",
+            "employeeID": 1043,
+            "name": "张锐",
+            "profileImage": "N_201607_06_f5c238f7491f4013b753e142d1f4176d",
+            "department": "市场推广部, 思沛大家庭",
+            "post": "副总经理"
+          },
+          "reportContent": [
+            {
+              "type": 0,
+              "text": "1.拜访感谢了市中医院的许主任，翁主任，简主任；2.公司报3月的账。",
+              "apiName": "",
+              "objectType": 0,
+              "feedId": 0,
+              "subType": 0
+            }
+          ],
+          "planContent": [
+            {
+              "type": 0,
+              "text": "1.答谢客户；2.拜访洪桥街的李主任，黄主任，吕主任。",
+              "apiName": "",
+              "objectType": 0,
+              "feedId": 0,
+              "subType": 0
+            }
+          ],
+          "isComment": false,
+          "rate": 0,
+          "planType": 1,
+          "canComment": false,
+          "reportContentLength": 34,
+          "planContentLength": 27,
+          "crmStartTime": 0,
+          "crmEndTime": 0,
+          "metadataApiName": "",
+          "metadataLayoutId": "",
+          "metadataVersion": "0",
+          "metadataId": "",
+          "templateId": "b33100738d874967adceb22a491caab4",
+          "templateName": "日计划",
+          "sectionType": 1,
+          "cycleType": 1,
+          "planText": "2018年05月09日 日计划，由张锐点评",
+          "reportPrompt": "今日工作总结",
+          "planPrompt": "明日工作计划",
+          "contentPrompt": "工作心得体会",
+          "crmResourceIds": [
+            
+          ]
+        },
+        "replies": [
+          
+        ],
+        "timingMessageRemaindsCount": 0,
+        "like": {
+          "likeCount": 0
+        },
+        "isAlreadyLike": false,
+        "reward": {
+          "rewardCount": 0
+        },
+        "isAlreadyReward": false,
+        "isFollowed": false,
+        "isArchived": false,
+        "isFeedLiked": false,
+        "feedNDFiles": [
+          
+        ],
+        "qrCode": "ZnM6Ly9mZWVkL2NvbW1vbi9pbmZvP3siZmVlZElkIjogNzQ0ODUsICJzdWJUeXBlIjoyLCJlYSI6Imd6c3B5eSJ9",
+        "feedWorkNoticeRangesUnread": [
+          
+        ],
+        "feedWorkNoticeRangesReaded": [
+          
+        ],
+        "feedWorkNoticeRangesConfirmed": [
+          
+        ],
+        "woTemplates": [
+          
+        ],
+        "feedExtInfos": [
+          
+        ]
+      },
+      {
+        "feedID": 74484,
+        "employeeID": 1030,
+        "sender": {
+          "gender": "M",
+          "employeeID": 1030,
+          "name": "谢尚磊",
+          "profileImage": "N_201511_19_b62201a50a414b7fa87bf9e66899e5cd",
+          "department": "思沛大家庭, 市场推广部B组",
+          "post": "学术专员"
+        },
+        "feedContentLength": 0,
+        "source": 203,
+        "sourceDescription": "纷享iPhone",
+        "createTime": 1525872451,
+        "feedType": 2,
+        "feedTypeDescription": "日志",
+        "isPublic": true,
+        "replyCount": 1,
+        "isUnRead": false,
+        "followTime": 0,
+        "canDelete": false,
+        "canReply": true,
+        "isEncrypted": false,
+        "encryptTitle": "",
+        "importTime": "0001-01-01T08:00:00+08:00",
+        "importer": 0,
+        "subtitle": "",
+        "senderRole": 1,
+        "pictures": [
+          
+        ],
+        "files": [
+          
+        ],
+        "employeeRange": "全公司，张锐",
+        "lastUpdateTime": 1526010143,
+        "feedRangeDescription": "全公司，1个部门，1个同事",
+        "feedRangeTip": "全公司，张锐",
+        "feedRangeEntities": [
+          {
+            "dataID": 1043,
+            "name": "张锐",
+            "isCircle": false
+          },
+          {
+            "dataID": 999999,
+            "name": "",
+            "isCircle": true
+          }
+        ],
+        "smsRemaindCount": 0,
+        "readCount": 0,
+        "feedContent": [
+          
+        ],
+        "plan": {
+          "leaderID": 1043,
+          "leader": {
+            "gender": "M",
+            "employeeID": 1043,
+            "name": "张锐",
+            "profileImage": "N_201607_06_f5c238f7491f4013b753e142d1f4176d",
+            "department": "市场推广部, 思沛大家庭",
+            "post": "副总经理"
+          },
+          "reportContent": [
+            {
+              "type": 0,
+              "text": "答谢白云第一客户，肖，薛。下午回公司报账。",
+              "apiName": "",
+              "objectType": 0,
+              "feedId": 0,
+              "subType": 0
+            }
+          ],
+          "planContent": [
+            {
+              "type": 0,
+              "text": "过从化，跟进药房廖，预防再次出现断货情况，跟进邓，皮，冯。",
+              "apiName": "",
+              "objectType": 0,
+              "feedId": 0,
+              "subType": 0
+            }
+          ],
+          "isComment": true,
+          "rate": 3,
+          "planType": 1,
+          "canComment": false,
+          "reportContentLength": 21,
+          "planContentLength": 29,
+          "crmStartTime": 0,
+          "crmEndTime": 0,
+          "metadataApiName": "",
+          "metadataLayoutId": "",
+          "metadataVersion": "0",
+          "metadataId": "",
+          "templateId": "b33100738d874967adceb22a491caab4",
+          "templateName": "日计划",
+          "sectionType": 1,
+          "cycleType": 1,
+          "planText": "2018年05月09日 日计划，由张锐点评",
+          "reportPrompt": "今日工作总结",
+          "planPrompt": "明日工作计划",
+          "contentPrompt": "工作心得体会",
+          "crmResourceIds": [
+            
+          ]
+        },
+        "replies": [
+          {
+            "feedReplyID": 11515,
+            "feedID": 74484,
+            "employeeID": 1043,
+            "sender": {
+              "gender": "M",
+              "employeeID": 1043,
+              "name": "张锐",
+              "profileImage": "N_201607_06_f5c238f7491f4013b753e142d1f4176d",
+              "department": "市场推广部, 思沛大家庭",
+              "post": "副总经理"
+            },
+            "createTime": 1526010143,
+            "source": 303,
+            "sourceDescription": "纷享Android",
+            "replyContentLength": 8,
+            "replyContent": [
+              {
+                "type": 0,
+                "text": "三分：符合要求 ",
+                "apiName": "",
+                "objectType": 0,
+                "feedId": 0,
+                "subType": 0
+              }
+            ],
+            "isUnRead": false,
+            "pictures": [
+              
+            ],
+            "files": [
+              
+            ],
+            "operationType": 1,
+            "like": {
+              "likeCount": 0
+            },
+            "isAlreadyLike": false,
+            "isDeleted": false,
+            "deleteAble": false,
+            "roleType": 0
+          }
+        ],
+        "timingMessageRemaindsCount": 0,
+        "like": {
+          "likeCount": 0
+        },
+        "isAlreadyLike": false,
+        "reward": {
+          "rewardCount": 0
+        },
+        "isAlreadyReward": false,
+        "isFollowed": false,
+        "isArchived": false,
+        "isFeedLiked": false,
+        "feedNDFiles": [
+          
+        ],
+        "qrCode": "ZnM6Ly9mZWVkL2NvbW1vbi9pbmZvP3siZmVlZElkIjogNzQ0ODQsICJzdWJUeXBlIjoyLCJlYSI6Imd6c3B5eSJ9",
+        "feedWorkNoticeRangesUnread": [
+          
+        ],
+        "feedWorkNoticeRangesReaded": [
+          
+        ],
+        "feedWorkNoticeRangesConfirmed": [
+          
+        ],
+        "woTemplates": [
+          
+        ],
+        "feedExtInfos": [
+          
+        ]
+      },
+      {
+        "feedID": 74482,
+        "employeeID": 1176,
+        "sender": {
+          "gender": "M",
+          "employeeID": 1176,
+          "name": "麦浩辉",
+          "profileImage": "",
+          "department": "思沛大家庭, 市场推广部A组",
+          "post": "学术专员"
+        },
+        "feedContentLength": 0,
+        "source": 203,
+        "sourceDescription": "纷享iPhone",
+        "createTime": 1525871844,
+        "feedType": 2,
+        "feedTypeDescription": "日志",
+        "isPublic": true,
+        "replyCount": 0,
+        "isUnRead": false,
+        "followTime": 0,
+        "canDelete": false,
+        "canReply": true,
+        "isEncrypted": false,
+        "encryptTitle": "",
+        "importTime": "0001-01-01T08:00:00+08:00",
+        "importer": 0,
+        "subtitle": "",
+        "senderRole": 1,
+        "pictures": [
+          
+        ],
+        "files": [
+          
+        ],
+        "employeeRange": "全公司，李珍",
+        "lastUpdateTime": 1525871844,
+        "feedRangeDescription": "全公司，1个部门，1个同事",
+        "feedRangeTip": "全公司，李珍",
+        "feedRangeEntities": [
+          {
+            "dataID": 1007,
+            "name": "李珍",
+            "isCircle": false
+          },
+          {
+            "dataID": 999999,
+            "name": "",
+            "isCircle": true
+          }
+        ],
+        "smsRemaindCount": 0,
+        "readCount": 0,
+        "feedContent": [
+          
+        ],
+        "plan": {
+          "leaderID": 1007,
+          "leader": {
+            "gender": "F",
+            "employeeID": 1007,
+            "name": "李珍",
+            "profileImage": "N_201603_23_dc9a9b91c9d440b3b9041263d20edbe4",
+            "department": "思沛大家庭, 市场推广部A组",
+            "post": "市场推广部A组经理"
+          },
+          "reportContent": [
+            {
+              "type": 0,
+              "text": "省医交接：林耀民、马希英、张国华、连子斌、关一鸣、肖月英、肖长裕、林轶勤、梁碧伟等",
+              "apiName": "",
+              "objectType": 0,
+              "feedId": 0,
+              "subType": 0
+            }
+          ],
+          "planContent": [
+            {
+              "type": 0,
+              "text": "1.红会，新港等社区交接",
+              "apiName": "",
+              "objectType": 0,
+              "feedId": 0,
+              "subType": 0
+            }
+          ],
+          "isComment": false,
+          "rate": 0,
+          "planType": 1,
+          "canComment": false,
+          "reportContentLength": 41,
+          "planContentLength": 12,
+          "crmStartTime": 0,
+          "crmEndTime": 0,
+          "metadataApiName": "",
+          "metadataLayoutId": "",
+          "metadataVersion": "0",
+          "metadataId": "",
+          "templateId": "b33100738d874967adceb22a491caab4",
+          "templateName": "日计划",
+          "sectionType": 1,
+          "cycleType": 1,
+          "planText": "2018年05月09日 日计划，由李珍点评",
+          "reportPrompt": "今日工作总结",
+          "planPrompt": "明日工作计划",
+          "contentPrompt": "工作心得体会",
+          "crmResourceIds": [
+            
+          ]
+        },
+        "replies": [
+          
+        ],
+        "timingMessageRemaindsCount": 0,
+        "like": {
+          "likeCount": 1,
+          "likeEmployees": [
+            {
+              "likeTime": 0,
+              "employeeID": 1007,
+              "name": "李珍",
+              "profileImage": "N_201603_23_dc9a9b91c9d440b3b9041263d20edbe4"
+            }
+          ]
+        },
+        "isAlreadyLike": false,
+        "reward": {
+          "rewardCount": 0
+        },
+        "isAlreadyReward": false,
+        "isFollowed": false,
+        "isArchived": false,
+        "isFeedLiked": false,
+        "feedNDFiles": [
+          
+        ],
+        "qrCode": "ZnM6Ly9mZWVkL2NvbW1vbi9pbmZvP3siZmVlZElkIjogNzQ0ODIsICJzdWJUeXBlIjoyLCJlYSI6Imd6c3B5eSJ9",
+        "feedWorkNoticeRangesUnread": [
+          
+        ],
+        "feedWorkNoticeRangesReaded": [
+          
+        ],
+        "feedWorkNoticeRangesConfirmed": [
+          
+        ],
+        "woTemplates": [
+          
+        ],
+        "feedExtInfos": [
+          
+        ]
+      },
+      {
+        "feedID": 74480,
+        "employeeID": 1011,
+        "sender": {
+          "gender": "M",
+          "employeeID": 1011,
+          "name": "于海洋",
+          "profileImage": "N_201511_24_6c26f92309bf46f3ae0f70ae4a0fc2b7",
+          "department": "思沛大家庭, 市场推广部A组",
+          "post": "学术专员"
+        },
+        "feedContentLength": 0,
+        "source": 303,
+        "sourceDescription": "纷享Android",
+        "createTime": 1525869346,
+        "feedType": 2,
+        "feedTypeDescription": "日志",
+        "isPublic": true,
+        "replyCount": 0,
+        "isUnRead": false,
+        "followTime": 0,
+        "canDelete": false,
+        "canReply": true,
+        "isEncrypted": false,
+        "encryptTitle": "",
+        "importTime": "0001-01-01T08:00:00+08:00",
+        "importer": 0,
+        "subtitle": "",
+        "senderRole": 1,
+        "pictures": [
+          
+        ],
+        "files": [
+          
+        ],
+        "employeeRange": "全公司，李珍",
+        "lastUpdateTime": 1525869346,
+        "feedRangeDescription": "全公司，1个部门，1个同事",
+        "feedRangeTip": "全公司，李珍",
+        "feedRangeEntities": [
+          {
+            "dataID": 1007,
+            "name": "李珍",
+            "isCircle": false
+          },
+          {
+            "dataID": 999999,
+            "name": "",
+            "isCircle": true
+          }
+        ],
+        "smsRemaindCount": 0,
+        "readCount": 0,
+        "feedContent": [
+          
+        ],
+        "plan": {
+          "leaderID": 1007,
+          "leader": {
+            "gender": "F",
+            "employeeID": 1007,
+            "name": "李珍",
+            "profileImage": "N_201603_23_dc9a9b91c9d440b3b9041263d20edbe4",
+            "department": "思沛大家庭, 市场推广部A组",
+            "post": "市场推广部A组经理"
+          },
+          "reportContent": [
+            {
+              "type": 0,
+              "text": "拜访曾缨询问华佗科室会时间，曾确认好给回复。拜访丰岩清跟进脑心清恢复用量。拜访方莹莹沟通脑心清使用，方告知正常使用，沟通海南活动接送。拜访刘中霖，李建军，陶彦谷，黎祥喷，袁沃亮有手术约明天南院拜访。联系华侨金药师约周五拜访。普通拜访彭英。",
+              "apiName": "",
+              "objectType": 0,
+              "feedId": 0,
+              "subType": 0
+            }
+          ],
+          "planContent": [
+            {
+              "type": 0,
+              "text": "拜访南院客户",
+              "apiName": "",
+              "objectType": 0,
+              "feedId": 0,
+              "subType": 0
+            }
+          ],
+          "isComment": false,
+          "rate": 0,
+          "planType": 1,
+          "canComment": false,
+          "reportContentLength": 119,
+          "planContentLength": 6,
+          "crmStartTime": 0,
+          "crmEndTime": 0,
+          "metadataApiName": "",
+          "metadataLayoutId": "",
+          "metadataVersion": "0",
+          "metadataId": "",
+          "templateId": "b33100738d874967adceb22a491caab4",
+          "templateName": "日计划",
+          "sectionType": 1,
+          "cycleType": 1,
+          "planText": "2018年05月09日 日计划，由李珍点评",
+          "reportPrompt": "今日工作总结",
+          "planPrompt": "明日工作计划",
+          "contentPrompt": "工作心得体会",
+          "crmResourceIds": [
+            
+          ]
+        },
+        "replies": [
+          
+        ],
+        "timingMessageRemaindsCount": 0,
+        "like": {
+          "likeCount": 1,
+          "likeEmployees": [
+            {
+              "likeTime": 0,
+              "employeeID": 1007,
+              "name": "李珍",
+              "profileImage": "N_201603_23_dc9a9b91c9d440b3b9041263d20edbe4"
+            }
+          ]
+        },
+        "isAlreadyLike": false,
+        "reward": {
+          "rewardCount": 0
+        },
+        "isAlreadyReward": false,
+        "isFollowed": false,
+        "isArchived": false,
+        "isFeedLiked": false,
+        "feedNDFiles": [
+          
+        ],
+        "qrCode": "ZnM6Ly9mZWVkL2NvbW1vbi9pbmZvP3siZmVlZElkIjogNzQ0ODAsICJzdWJUeXBlIjoyLCJlYSI6Imd6c3B5eSJ9",
+        "feedWorkNoticeRangesUnread": [
+          
+        ],
+        "feedWorkNoticeRangesReaded": [
+          
+        ],
+        "feedWorkNoticeRangesConfirmed": [
+          
+        ],
+        "woTemplates": [
+          
+        ],
+        "feedExtInfos": [
+          
+        ]
+      },
+      {
+        "feedID": 74470,
+        "employeeID": 1025,
+        "sender": {
+          "gender": "M",
+          "employeeID": 1025,
+          "name": "吴华东",
+          "profileImage": "N_201511_23_79f80e647ca94ebcb8b31e214cc3b6eb",
+          "department": "思沛大家庭, 市场推广部A组",
+          "post": "学术专员"
+        },
+        "feedContentLength": 0,
+        "source": 203,
+        "sourceDescription": "纷享iPhone",
+        "createTime": 1525862269,
+        "feedType": 2,
+        "feedTypeDescription": "日志",
+        "isPublic": false,
+        "replyCount": 0,
+        "isUnRead": false,
+        "followTime": 0,
+        "canDelete": false,
+        "canReply": true,
+        "isEncrypted": false,
+        "encryptTitle": "",
+        "importTime": "0001-01-01T08:00:00+08:00",
+        "importer": 0,
+        "subtitle": "",
+        "senderRole": 1,
+        "pictures": [
+          
+        ],
+        "files": [
+          
+        ],
+        "employeeRange": "2个部门，1个同事",
+        "lastUpdateTime": 1525862269,
+        "feedRangeDescription": "2个部门，1个同事",
+        "feedRangeTip": "李珍，思沛大家庭，市场推广部A组",
+        "feedRangeEntities": [
+          {
+            "dataID": 1007,
+            "name": "李珍",
+            "isCircle": false
+          },
+          {
+            "dataID": 1015,
+            "name": "思沛大家庭",
+            "isCircle": true
+          },
+          {
+            "dataID": 1030,
+            "name": "市场推广部A组",
+            "isCircle": true
+          }
+        ],
+        "smsRemaindCount": 0,
+        "readCount": 0,
+        "feedContent": [
+          
+        ],
+        "plan": {
+          "leaderID": 1007,
+          "leader": {
+            "gender": "F",
+            "employeeID": 1007,
+            "name": "李珍",
+            "profileImage": "N_201603_23_dc9a9b91c9d440b3b9041263d20edbe4",
+            "department": "思沛大家庭, 市场推广部A组",
+            "post": "市场推广部A组经理"
+          },
+          "reportContent": [
+            {
+              "type": 0,
+              "text": "今日主要工作，1拜访广一潘卫虹，维护答谢并邀请其参加神农草堂活动，其表示周六刚好上班，2拜访冯励，维护答谢，3拜访华林张俊华，维护答谢，并邀请参加神农草堂活动，其表示可以参加，4拜访郑晓辉，维护答谢，5拜访谢霞平，维护答谢。6拜访西村王艳辉，维护答谢7拜访站前蔡莺桦，维护答谢，并邀请参加神农草堂活动，其表示家里装修，去不了。",
+              "apiName": "",
+              "objectType": 0,
+              "feedId": 0,
+              "subType": 0
+            }
+          ],
+          "planContent": [
+            {
+              "type": 0,
+              "text": "明天主要答谢客户，确定神农草堂活动名单。",
+              "apiName": "",
+              "objectType": 0,
+              "feedId": 0,
+              "subType": 0
+            }
+          ],
+          "isComment": false,
+          "rate": 0,
+          "planType": 1,
+          "canComment": false,
+          "reportContentLength": 163,
+          "planContentLength": 20,
+          "crmStartTime": 0,
+          "crmEndTime": 0,
+          "metadataApiName": "",
+          "metadataLayoutId": "",
+          "metadataVersion": "0",
+          "metadataId": "",
+          "templateId": "b33100738d874967adceb22a491caab4",
+          "templateName": "日计划",
+          "sectionType": 1,
+          "cycleType": 1,
+          "planText": "2018年05月09日 日计划，由李珍点评",
+          "reportPrompt": "今日工作总结",
+          "planPrompt": "明日工作计划",
+          "contentPrompt": "工作心得体会",
+          "crmResourceIds": [
+            
+          ]
+        },
+        "replies": [
+          
+        ],
+        "timingMessageRemaindsCount": 0,
+        "like": {
+          "likeCount": 1,
+          "likeEmployees": [
+            {
+              "likeTime": 0,
+              "employeeID": 1007,
+              "name": "李珍",
+              "profileImage": "N_201603_23_dc9a9b91c9d440b3b9041263d20edbe4"
+            }
+          ]
+        },
+        "isAlreadyLike": false,
+        "reward": {
+          "rewardCount": 0
+        },
+        "isAlreadyReward": false,
+        "isFollowed": false,
+        "isArchived": false,
+        "isFeedLiked": false,
+        "feedNDFiles": [
+          
+        ],
+        "qrCode": "ZnM6Ly9mZWVkL2NvbW1vbi9pbmZvP3siZmVlZElkIjogNzQ0NzAsICJzdWJUeXBlIjoyLCJlYSI6Imd6c3B5eSJ9",
+        "feedWorkNoticeRangesUnread": [
+          
+        ],
+        "feedWorkNoticeRangesReaded": [
+          
+        ],
+        "feedWorkNoticeRangesConfirmed": [
+          
+        ],
+        "woTemplates": [
+          
+        ],
+        "feedExtInfos": [
+          
+        ]
+      }
+    ],
+    "pageSize": 0,
+    "pageNumber": 0,
+    "pageCount": 0,
+    "totalCount": 0,
+    "maxID": 74728,
+    "sinceID": 74470,
+    "hasMore": true,
+    "from": 0
+  },
+  "success": true,
+  "isAuthorized": true,
+  "statusCode": 0,
+  "serviceTime": 1526027085,
+  "isCancellation": false,
+  "ErrorCode": 0,
+  "userId": "gzspyy.1141"
+}

@@ -55,7 +55,7 @@ def login(email, password, captcha):
 
 def exp(email):
     star='2018-03-01'
-    end='2018-03-19'
+    end='2018-03-26'
     times =  int(round(time.time() * 1000))  #获取13位时间戳
     print times
     date={'_dc':str(times),

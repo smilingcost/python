@@ -28,8 +28,8 @@ def afree(url):
     start=time.time()
     r = requests.get(url,headers = header)#,timeout=3) #设置超时时间，防止程序假死，即超过时间时执行下次循环
     list_name = url.split('/')       #分片
-    file_name = 'c'+list_name[len(list_name)-1]     #取最后一个字符串
-    path="D:\\meinv\\afree"
+    file_name = 'd'+list_name[len(list_name)-1]     #取最后一个字符串
+    path="D:\\meinv\\afree\\20180425"
     file_path='%s/%s'%(path,file_name)
     if not os.path.exists(path):           #判断路径是否存在，不存在
        os.makedirs(path)
@@ -41,7 +41,7 @@ if __name__=='__main__':
     pool = multiprocessing.Pool(processes = 30)     #processes = 3为进程数量
     for i in range(0 ,3000):
 
-       url = 'http://1.234.58.178/video/_definst_/mp4:mvod/20180316/756/C81D8462_201969756_3.mp4/media_'+str(i)+'.ts'
+       url = 'http://183.111.26.106/video/_definst_/mp4:vod/20180425/584/EF5C912E_203109584_4.mp4/media_'+str(i)+'.ts'
        pool.apply_async(afree, (url, ))   #维持执行的进程总数为processes，当一个进程执行完毕后会添加新的进程进去
 
     print "开始下载文件>>>>>\n"
@@ -49,6 +49,3 @@ if __name__=='__main__':
     pool.join()   #调用join之前，先调用close函数，否则会出错。执行完close后不会有新的进程加入到pool,join函数等待所有子进程结束
     print '文件下载完成'
 
-#http://1.234.58.178/video/_definst_/mp4:mvod/20180316/756/98DD83D9_201969756_1.mp4/media_25.ts
-#http://125.209.207.87/video/_definst_/mp4:mvod/20180316/756/6AD1A26D_201969756_2.mp4/media_287.ts
-#http://1.234.58.178/video/_definst_/mp4:mvod/20180316/756/C81D8462_201969756_3.mp4/media_99.ts

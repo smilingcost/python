@@ -56,7 +56,7 @@ def login(email, password, captcha):
 
 def exp(response,email):
     star='2018-3-1'
-    end='2018-3-19'
+    end='2018-3-26'
     #登录后才能访问的网页
     url ='http://www.crgdpharm.com/Service/Allfl?Mindate='+star+'&Maxdate='+end+'&Submit=+%B2%E9%BF%B4%CB%F9%D3%D0%B2%FA%C6%B7%B5%C4%C1%F7%CF%F2+'
     #发送访问请求
@@ -175,7 +175,7 @@ def main():
 
 if __name__ == '__main__':
     count=1
-    main11()
+ #   main11()
     main()
 
 
